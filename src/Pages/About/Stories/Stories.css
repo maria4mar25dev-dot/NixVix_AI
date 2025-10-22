@@ -1,0 +1,164 @@
+.ourstory-section {
+  position: relative;
+  color: #fff;
+  padding: 80px 40px;
+  overflow: hidden;
+}
+
+/* Left & Right background images */
+.ourstory-bg-left,
+.ourstory-bg-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  z-index: 0;
+  filter: blur(0.5px);
+  pointer-events: none;
+
+  width: 10%;        
+  height: 100%;    
+  object-fit: cover;  
+}
+
+/* Left side */
+.ourstory-bg-left {
+  left: 0;
+}
+
+/* Right side */
+.ourstory-bg-right {
+  right: 0;
+}
+
+.ourstory-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+}
+
+/* Left side */
+.ourstory-left {
+  flex: 1;
+}
+
+
+
+/* Right side */
+.ourstory-right {
+  flex: 1;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.accordion-content {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  .ourstory-section {
+    padding: 60px 30px;
+  }
+
+  .ourstory-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .ourstory-left,
+  .ourstory-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .accordion-header h3 {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    font-size: 0.95rem;
+  }
+   .ourstory-bg-left,
+  .ourstory-bg-right {
+    width: 15%;
+    opacity: 0.5;
+    filter: blur(1.5px);
+  }
+  
+  
+}
+
+
+@media (max-width: 600px) {
+  .ourstory-section {
+    padding: 20px 30px;
+  }
+
+  .accordion-item {
+    padding: 15px 0;
+  }
+
+  .accordion-header h3 {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+  .ourstory-container {
+    gap: 25px;
+  }
+  .ourstory-bg-left,
+  .ourstory-bg-right {
+    display: none; /* hide them to avoid clutter on small screens */
+  }
+}
+
+
+@media (max-width: 400px) {
+ .ourstory-section {
+    padding: 0px 25px 30px 25px;
+  }
+  .accordion-header h3 {
+    font-size: 16px;
+  }
+
+  .accordion-content {
+    font-size: 12px;
+  }
+  .ourstory-container {
+    gap: 15px;
+  }
+}

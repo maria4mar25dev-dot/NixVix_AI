@@ -1,0 +1,165 @@
+.mission-section {
+  position: relative;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 50px;
+   background: rgba(0, 0, 0, 0.95);
+}
+
+/* Left & Right Backgrounds */
+.mission-bg-left,
+.mission-bg-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  z-index: 2;
+  filter: blur(1px);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+/* Left Circuit */
+.mission-bg-left {
+  left: 0;
+  width: 400px;
+  max-width: 35%;
+}
+
+/* Right Circuit */
+.mission-bg-right {
+  right: 0;
+  width: 400px;
+  max-width: 35%;
+}
+
+/* Glass Capsule */
+.mission-card {
+  position: relative;
+  z-index: 1;
+  width: 87%;
+ background: rgba(0, 0, 0, 0.08); 
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 40px rgba(0, 255, 170, 0.08);
+  border-radius: 200px;
+  backdrop-filter: blur(25px) saturate(150%); 
+  -webkit-backdrop-filter: blur(25px) saturate(150%);
+  padding: 70px 40px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+/* Text */
+.mission-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #a9a9a9;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hover subtle glow */
+.mission-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 40px rgba(0, 255, 170, 0.15);
+}
+
+
+@media (max-width: 1200px) {
+  
+  .mission-card {
+    border-radius: 150px;
+    padding: 60px 30px;
+  }
+
+  .mission-heading {
+    font-size: 2.2rem;
+  }
+
+  .mission-text {
+    font-size: 1.1rem;
+  }
+
+  .mission-bg-left,
+  .mission-bg-right {
+    width: 320px;
+    opacity: 0.25;
+  }
+}
+
+/* 📱 Tablets Portrait */
+@media (max-width: 992px) {
+  .mission-section{
+    margin: 0 30px;
+  }
+  .mission-card {
+    border-radius: 40px;
+    padding: 50px 25px;
+  }
+
+  .mission-heading {
+    font-size: 1.8rem;
+  }
+
+  .mission-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .mission-bg-left,
+  .mission-bg-right {
+    width: 250px;
+    opacity: 0.18;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mission-section{
+    margin: 0 20px;
+  }
+  .mission-card {
+    width: 95%;
+    border-radius: 30px;
+    padding: 40px 20px;
+    margin-top: -75px;
+    z-index: 10;
+  }
+
+  .mission-heading {
+    font-size: 1.6rem;
+  }
+
+  .mission-text {
+    font-size: 14px;
+  }
+
+  .mission-bg-left,
+  .mission-bg-right {
+    display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .mission-section{
+    margin: 0 15px;
+  }
+  .mission-card {
+    border-radius: 20px;
+    padding: 30px 15px;
+  }
+
+  .mission-heading {
+    font-size: 1.4rem;
+  }
+
+  .mission-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero-section {
+  /* height: 100vh; */
   min-height: 100vh;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+  to top,
+  rgba(0, 0, 0, 1) 0%,       
+    rgba(0, 0, 0, 0.95) 20%,  
+    rgba(0, 0, 0, 0.7) 45%,   
+    rgba(0, 0, 0, 0.5) 70%,    
+    rgba(0, 0, 0, 0.35) 85%,   
+    rgba(0, 0, 0, 0.25) 100% 
+);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.grid-overlay::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 100px;
+  right: 50px;
+  background: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 1px,
+    transparent 200px
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+/* ===== Infinite Scroll Animation ===== */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+  display: flex;
+  flex-shrink: 0;
+  width: max-content; /* ensures full scrolling area */
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+@layer components {
+  .heading1 {
+    @apply font-inter font-bold text-white mb-4 tracking-normal    
+    text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-[3.5rem]
+          leading-snug sm:leading-normal md:leading-[2.5rem] lg:leading-[4rem] xl:leading-[4.5rem]
+
+  }
+
+  .sub-heading {
+    @apply font-inter font-normal text-white 
+           leading-snug sm:leading-normal md:leading-[2rem] lg:leading-[2.5rem] xl:leading-[2.7rem]
+           text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.5rem]
+  }
+
+ .heading2 {
+    @apply font-inter font-bold text-white
+          text-[1.1rem] sm:text-[1.35rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem]
+          mb-4 sm:mb-5 md:mb-6 lg:mb-10 xl:mb-12
+           leading-snug sm:leading-normal md:leading-[2rem] lg:leading-[2.5rem] xl:leading-[2.7rem]
+           tracking-normal text-center relative z-20;
+  }
+
+  .subtitle {
+    @apply font-inter font-normal text-white
+    mb-1 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-4
+
+           text-[0.6rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] xl:text-[1rem]
+            leading-snug sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
+           text-center tracking-normal;
   }
 }

@@ -14,17 +14,18 @@ function Workflow() {
 
   return (
     <div className="outer-container"
-    style={{
-        backgroundImage: `
-          linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.93) 0%,
-            rgba(26, 49, 43, 0.9) 70%,
-            rgba(0, 0, 0, 1) 100%
-          ),
-          url(${IMAGES.workflowBackground})
-        `,
-      }}
+    
+      style={{
+    backgroundImage: `linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(26, 49, 43, 0.9) 70%,
+        rgba(0, 0, 0, 1) 100%
+      ), url(${IMAGES.workflowBackground})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  }}
     >
     <section className="workflow-section">
       <div className="workflow-header">

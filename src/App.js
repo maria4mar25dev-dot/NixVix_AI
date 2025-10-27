@@ -8,6 +8,7 @@ import ContactUs from '../src/Pages/ContactUs/ContactUs'
 import CaseStudies from '../src/Pages/CaseStudies/CaseStudies'
 import Navbar from './CommonComponents/Navbar'
 import Footer from './CommonComponents/Footer/Footer'
+import PageNotFound from './Pages/PageNotFound'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 
@@ -23,7 +24,8 @@ function App() {
         <Route path="/techstack" element={<TechStack />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/contact-us" element={<ContactUs />} />
-         <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer/>
     </Router>

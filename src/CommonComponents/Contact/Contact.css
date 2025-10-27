@@ -25,8 +25,9 @@
 
 .contact-box p {
   font-family: 'Inter', sans-serif;
-  color: #FFFFFF;
+  color: #A9A9A9;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .contact-form {
@@ -206,6 +207,7 @@ textarea {
   .contact-box p {
     text-align: center;
     font-size: 14px;
+    margin-bottom: 15px;
   }
 
   .submit-btn {
@@ -232,6 +234,7 @@ textarea {
   .contact-box p {
     font-size: 13px;
     line-height: 22px;
+    margin-bottom: 10px;
   }
 
   input,

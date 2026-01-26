@@ -10,27 +10,26 @@ function HomeHero() {
         home ? "grid-overlay" : ""
       } flex flex-col items-center justify-center text-center relative`}
       style={{
-        backgroundImage: `url(${IMAGES.heroImg1})`,
+        backgroundImage: `url(${IMAGES.heroGif})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
+        
       }}
     >
-      {/* Overlay */}
-      <div className="overlay"></div>
 
       {/* Hero Content */}
-      <div className="relative z-[2] max-w-[900px] flex flex-col items-center justify-center text-center  mt-24">
+      <div className="relative z-[2] max-w-[1000px] flex flex-col items-center justify-center text-center  mt-24">
         {/* Badge */}
-        <div className="inline-block whitespace-nowrap bg-[rgba(27,61,53,0.8)] text-white text-[10px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-inter font-medium md:font-semibold italic px-2 sm:px-3 md:px-4 py-1 sm:px-3 sm:py-1 md:px-4 md:py-2  lg:px-5 lg:py-3 rounded-full border border-[#348E77]  mb-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 overflow-hidden">
+        <div className="inline-block whitespace-nowrap  bg-[#348E774D] text-white text-[10px] sm:text-[14px] md:text-[15px] lg:text-[16px] font-inter font-medium md:font-semibold italic  px-2 py-1 sm:px-3  md:px-4 md:py-2  lg:px-[24px] lg:py-[8px] rounded-full border border-[#348E77]  mb-4 mt-6 sm:mt-8 md:mt-10 lg:mt-12 overflow-hidden    shadow-[inset_0px_2px_4px_0px_rgba(0,0,0,0.05)]  backdrop-blur-[4px]">
           <span className="not-italic mr-1">★</span>
           Enterprise-Grade AI THAT <em>Thinks, Sees, Hears, Speaks &amp; Adapts</em>
         </div>
 
         {/* Heading */}
         <h1 className="heading1">
-          Turning Complexity Into <br />
-          <span className="block text-center">Clarity Through AI</span>
+          TURNING COMPLEXITY INTO <br />
+          <span className="block text-center">CLARITY THROUGH AI</span>
         </h1>
 
         {/* Paragraph */}
@@ -43,13 +42,27 @@ function HomeHero() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 mb-8">
           <Link to="/case-studies">
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full font-semibold text-[15px] transition-all duration-300 border border-[#2E7A77] text-white hover:bg-[#27f0d5] hover:text-black">
-              Explore Our Work →
+            <button className="group flex items-center justify-center gap-[10px] w-full sm:w-auto px-6 py-3 rounded-full font-semibold text-[15px] transition-all duration-300 border border-[#2B706D] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white hover:border-2 hover:border-[#51CBC6]">
+              Explore Our Work   <span
+                  className="
+                    inline-flex
+                    transition-transform duration-300 ease-in-out
+                    rotate-0
+                    group-hover:rotate-[45deg]
+                    group-hover:translate-x-[2px]
+                  "
+                >
+                  <img
+                    src={IMAGES.arrow}   
+                    alt="arrow"
+                    className="w-[12px] h-[18px] object-contain"
+                  />
+                </span>
             </button>
           </Link>
 
           <Link to="/contact-us">
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full font-semibold text-[15px] bg-[#2E7A77] text-white shadow-[0_4px_54px_rgba(0,0,0,0.25)] transition-all duration-300 hover:bg-[#27f0d5] hover:text-black">
+            <button className="w-full sm:w-auto px-6 py-3 rounded-full font-medium text-[18px] bg-[#2E7A77] text-white  shadow-[0px_4px_54px_0px_#00000040]  transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
               Let’s Talk AI
             </button>
           </Link>

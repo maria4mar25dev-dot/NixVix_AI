@@ -124,10 +124,17 @@ textarea {
 }
 
 .submit-btn {
-  background: 
-  linear-gradient(#000, #000) padding-box, 
-  linear-gradient(to right, #348E77 0%, #348E77 80%, #ff7b2d 100%) border-box;
-  border: 1px solid transparent; 
+  
+  background:
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(
+      87.73deg,
+      #2B706D 69.92%,
+      #B14A1C 101.23%
+    ) border-box;
+  border: 1px solid transparent;
+  
+  border-image-slice: 1;
   padding: 0.8rem 1rem;
   border-radius: 110px;
   color: #FFFFFF;
@@ -356,8 +363,13 @@ textarea {
 
 /* Submit Button */
 .contact-form-alt .submit-btn {
-  background: linear-gradient(#000, #000) padding-box, 
-              linear-gradient(to right, #348E77 0%, #348E77 80%, #ff7b2d 100%) border-box;
+   background:
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(
+      87.73deg,
+      #2B706D 69.92%,
+      #B14A1C 101.23%
+    ) border-box;
   border: 1px solid transparent;
   padding: 0.8rem 1rem;
   border-radius: 110px;
@@ -478,4 +490,10 @@ textarea.error {
     font-size: 14px;
     padding: 0.7rem 1rem;
   }
+}
+.consent-checkbox {
+  width: 20px;
+  height: 20px;
+  /* accent-color: #4f46e5;  */
+  cursor: pointer;
 }

@@ -41,7 +41,6 @@ function Button({ label }) {
     <button
       className="
         bg-black 
-        border border-white/10 
         text-white 
          px-2.5 sm:px-4 md:px-6 
          py-1.5 sm:py-2 md:py-3  
@@ -50,9 +49,10 @@ function Button({ label }) {
         font-medium 
         cursor-pointer 
         transition-all duration-300 
-        shadow-[0_0_15px_rgba(0,255,200,0.2)] 
-        hover:shadow-[0_0_25px_rgba(0,255,200,0.6)] 
-        hover:border-[rgba(0,255,200,0.8)]
+        shadow-[0px_0px_11.44px_1.62px_#2B6D6B]
+        border-[1.22px] border-transparent
+        hover:border-[#419491]
+        hover:shadow-[0px_0px_11.44px_1.62px_#5CE5E0]
       "
     >
       {label}

@@ -66,7 +66,10 @@ function Expertise() {
   return (
     <div className="relative max-w-[1200px] mx-[15px] sm:mx-[20px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mb-6 md:mb-8  py-10">
       {/* Glowing radial background */}
-      <div className="absolute z-[2] inset-0 bg-[radial-gradient(circle_at_center,rgba(43,112,109,0.6)_0%,transparent_50%)] blur-[80px] -z-10"></div>
+      <div className="absolute  inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.3)_0%,rgba(43,112,109,0)_100%)]
+ backdrop-blur-[64px]
+rounded-full
+"></div>
 
       {/* Heading */}
       <h2 className="heading2 text-center mb-10">Expertise</h2>
@@ -76,7 +79,9 @@ function Expertise() {
         {techData.map((item, index) => (
           <div
             key={index}
-            className="flex items-center gap-6 bg-[#111] border-2 border-[#1C1C1C] rounded-2xl p-4 sm:p-4 md:p-6  text-white  cursor-pointer"
+            className="flex items-center gap-6 bg-white/5
+            backdrop-blur-[8px] 
+            border-2 border-[#1C1C1C] rounded-[30px] p-4 sm:p-4 md:p-6  text-white  cursor-pointer"
           >
             {/* Icon */}
             <div className="flex-shrink-0">

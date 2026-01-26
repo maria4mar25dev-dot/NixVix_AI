@@ -10,14 +10,14 @@ const industriesData = [
     meta: "PhysioW – A Physiotherapist Assistant",
   },
   {
-    image: IMAGES.industryImg,
+    image: IMAGES.industryImg2,
     title: "Sports",
     description:
       "AI-powered athlete tracking system combining swimmer performance logging and drone-based soccer monitoring",
     meta: "Swim Today - Swimmer Performance Logger",
   },
   {
-    image: IMAGES.industryImg,
+    image: IMAGES.industryImg3,
     title: "Retail",
     description:
       "AI-powered system automating shelf restocking and optimizing retail operations with Biscuit.ai.",
@@ -39,9 +39,7 @@ function Industries() {
 
   return (
     <section className="relative text-center text-white px-2 md:px-6 py-2 sm:py-4 md:py-12 lg:py-14 overflow-hidden w-[93%] max-w-[1380px] mx-auto">
-      {/* Gradient background */}
-      <div className="absolute top-[100px] left-0 w-[40%] h-full bg-[radial-gradient(circle_at_left_center,rgba(39,240,213,0.15),transparent_70%)] -z-10"></div>
-
+     
       {/* Titles */}
       <h4 className="subtitle">Industries</h4>
       <h2 className="heading2 ">Where Our Solutions Make An Impact</h2>
@@ -49,13 +47,13 @@ function Industries() {
       {/* Card Container */}
       <div className="relative max-w-[1050px] mx-auto mt-8">
         {/* Image + Overlay Info */}
-        <div className="relative rounded-2xl overflow-hidden">
+        <div className="relative rounded-t-2xl overflow-hidden">
           <img
             src={currentIndustry.image}
             alt={currentIndustry.title}
             className="w-full md:h-[450px] sm:h-[300px] h-[250] object-cover block"
           />
-          <div className="absolute bottom-0 left-0 w-full bg-[rgba(20,20,20,0.95)] backdrop-blur-md text-left lg:p-6 md:p-4 sm:p-3 xs:p-2">
+          <div className="absolute bottom-0 left-0 w-full bg-[#171717]  backdrop-blur-[64px] text-left lg:p-6 md:p-4 sm:p-3 xs:p-2">
             <h3 className="text-[16px] sm:text-[16px] md:text-lg font-semibold mb-1 px-1">
               {currentIndustry.title}
             </h3>

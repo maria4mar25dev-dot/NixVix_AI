@@ -256,7 +256,7 @@ function Contact({ alt }) {
           </>
         ) : (
           <>
-            <h2 className="heading2">Contact</h2>
+            <h2 className="heading2 text-left">Contact</h2>
             <p>Let’s Build the Future of AI Together</p>
             <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
               <div className="form-left">
@@ -340,6 +340,7 @@ function Contact({ alt }) {
                     name="consent"
                     checked={formData.consent}
                     onChange={handleChange}
+                    className="consent-checkbox"
                   />
                   <label htmlFor="consent">
                     I have reviewed the <a href="/">Privacy Policy</a> and give my consent to

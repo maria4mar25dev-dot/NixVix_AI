@@ -3,6 +3,7 @@ import locationIcon from './Images/locationIcon.webp'
 import contactIcon from './Images/contactIcon.webp'
 import emailIcon from './Images/emailIcon.webp'
 import heroImg1 from './Images/hero_img.webp'
+import heroGif from './Images/heroGif.gif'
 import heroImg2 from './Images/caseStudyImg.webp'
 import heroImg3 from './Images/servicesImg.webp'
 import heroImg4 from './Images/techImg.webp'
@@ -14,6 +15,11 @@ import item2 from './Images/item2.webp'
 import item3 from './Images/item3.webp'
 import item4 from './Images/item4.webp'
 import item5 from './Images/item5.webp'
+import serviceImg1 from './Images/serviceImg1.webp'
+import serviceImg2 from './Images/serviceImg2.webp'
+import serviceImg3 from './Images/serviceImg3.webp'
+import serviceImg4 from './Images/serviceImg4.webp'
+import serviceImg5 from './Images/serviceImg5.webp'
 import techcardLogo1 from './Images/python.webp'
 import techcardLogo2 from './Images/TensorRT logo 1.png'
 import techcardLogo3 from './Images/detectron.webp'
@@ -25,6 +31,8 @@ import caseStudyImg1 from './Images/CaseStudy1.webp'
 import caseStudyImg2 from './Images/CaseStudy2.webp'
 import caseStudyImg3 from './Images/CaseStudy3.webp'
 import industryImg from './Images/Industry(HealthCare).webp'
+import industryImg2 from './Images/industryImg2.webp'
+import industryImg3 from './Images/industryImg3.webp'
 import partnerLogo1 from './Images/fluffy-technologies_logo.webp'
 import partnerLogo2 from './Images/Biscuit_ai_logo_converted.webp'
 import partnerLogo3 from './Images/Shelfr logo.webp'
@@ -65,12 +73,17 @@ import bgRight from './Images/bgRight.webp'
 import LinkedIn from './Images/Link.webp'
 import quote from './Images/“.webp'
 import testimonialBg from './Images/Rectangle.webp'
+import arrow from './Images/arrow.webp'
+import arrow2 from './Images/arrow2.webp'
+import testimonialOverlay from './Images/testimonialOverlay.webp'
+
 export const IMAGES = {
   logo,
   locationIcon,
   contactIcon,
   emailIcon,
   heroImg1,
+  heroGif,
   heroImg2,
   heroImg3,
   heroImg4,
@@ -82,6 +95,11 @@ export const IMAGES = {
   item3,
   item4,
   item5,
+  serviceImg1,
+  serviceImg2,
+  serviceImg3,
+  serviceImg4,
+  serviceImg5,
   techcardLogo1,
   techcardLogo2,
   techcardLogo3,
@@ -93,6 +111,8 @@ export const IMAGES = {
   caseStudyImg2,
   caseStudyImg3,
   industryImg,
+  industryImg2,
+  industryImg3,
   partnerLogo1,
   partnerLogo2,
   partnerLogo3,
@@ -132,5 +152,8 @@ export const IMAGES = {
   bgRight,
   LinkedIn,
   quote,
-  testimonialBg
+  testimonialBg,
+  arrow,
+  arrow2,
+  testimonialOverlay
 };

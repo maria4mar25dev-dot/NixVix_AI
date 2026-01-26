@@ -14,17 +14,16 @@ function Impact({ solution = false }) {
 <div
   className="
     absolute 
-    w-[200px] h-[350px] 
-    sm:w-[300px] sm:h-[500px] 
-    md:w-[400px] md:h-[700px] 
-    lg:w-[500px] lg:h-[800px] 
-    xl:w-[600px] xl:h-[900px] 
-    rounded-full 
-    top-[-60px] sm:top-[-70px] md:top-[-80px] 
+    w-[384px] h-[384px]  
+    top-[-60px] sm:top-[-70px] md:top-[58px] 
     left-[-100px] sm:left-[-120px] md:left-[-150px] 
     pointer-events-none 
     z-0 
-    bg-[radial-gradient(circle,rgba(39,240,213,0.15),transparent_70%)]
+     bg-[#2B706D36]
+  backdrop-blur-[134.3px]
+  rounded-full
+
+
   "
 ></div>
 
@@ -32,17 +31,17 @@ function Impact({ solution = false }) {
 <div
   className="
     absolute 
-    w-[200px] h-[350px] 
-    sm:w-[300px] sm:h-[500px] 
-    md:w-[400px] md:h-[700px] 
-    lg:w-[500px] lg:h-[800px] 
-    xl:w-[600px] xl:h-[900px] 
-    rounded-full 
-    top-[50px] sm:top-[70px] md:top-[100px] 
+    w-[384px] h-[384px] 
+  
+    top-[50px] sm:top-[70px] md:top-[266px] 
     right-[-100px] sm:right-[-120px] md:right-[-150px] 
     pointer-events-none 
     z-0 
-    bg-[radial-gradient(circle,rgba(39,240,213,0.15),transparent_70%)]
+    bg-[#2B706D36]
+  backdrop-blur-[134.3px]
+  rounded-full
+
+
   "
 ></div>
 
@@ -58,7 +57,7 @@ function Impact({ solution = false }) {
     w-[90%] sm:w-[95%] md:w-full 
     h-auto 
     opacity-50 
-    z-[2] 
+    z-0 
     pointer-events-none 
     blur-sm
   "
@@ -75,7 +74,7 @@ function Impact({ solution = false }) {
     w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] xl:w-[280px] 
     h-auto 
     opacity-70 
-    z-[2] 
+    z-0
     pointer-events-none 
     blur-sm
   "
@@ -92,12 +91,13 @@ function Impact({ solution = false }) {
         className="
           relative z-[1] flex justify-around items-center flex-wrap
           gap-2 sm:gap-3 md:gap-6 lg:gap-8 xl:gap-12
-          bg-white/5 border border-white/25 rounded-[150px]
+         rounded-[150px]
           px-2 sm:px-4 md:px-10
           py-6 sm:py-8 md:py-10 lg:py-14
           max-w-[90%] mx-auto mt-4 sm:mt-8 md:mt-16 lg:mt-20 mb-4 sm:mb-8 md:mb-12 lg:mb-32
-          backdrop-blur-xl backdrop-saturate-150
-          shadow-[0_8px_32px_rgba(0,0,0,0.25)]
+         bg-white/5
+         backdrop-blur-[8px] 
+         border-2 border-[#1C1C1C]
         "
       >
         {[
@@ -162,7 +162,7 @@ function VisionMission() {
       </h2>
       <p
         className="
-          text-white-400 
+           text-[#A9A9A9] 
           leading-5 sm:leading-6 md:leading-8 text-[12px] sm:text-[14px] md:text-sm lg:text-base 
         "
       > 
@@ -187,7 +187,7 @@ function VisionMission() {
       </h2>
       <p
         className="
-          text-white-400 
+          text-[#A9A9A9]
           leading-5 sm:leading-6 md:leading-8 text-[12px] sm:text-[14px] md:text-sm lg:text-base 
         "
       >

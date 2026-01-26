@@ -49,10 +49,16 @@ function Button ({label}){
          py-2 sm:py-2 md:py-2 
       
                    font-thin sm:font-light md:font-normal   text-[12px] sm:text-[14px] md:text-[15px] rounded-full
-                   transition-all duration-300 border border-[#2E7A77]
-                   text-white hover:bg-[#27f0d5] hover:text-black
-                    shadow-[0_0_16px_rgba(0,255,200,0.5)] 
-                   backdrop-blur-sm"
+                   transition-all duration-300 
+                   text-white 
+                   shadow-[0_0_16px_rgba(0,255,200,0.5)] 
+                   backdrop-blur-sm shadow-[0px_0px_14.1px_2px_#2B6D6B]
+                   transition-all
+                   duration-300
+                   ease-in
+                   border-[1.22px] border-transparent
+        hover:border-[#419491]
+        hover:shadow-[0px_0px_11.44px_1.62px_#5CE5E0] "
       >
        {label}
       </button>

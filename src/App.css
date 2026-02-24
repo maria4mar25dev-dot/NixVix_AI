@@ -5,9 +5,7 @@
 body {
   @apply font-inter;
 }
-
 .hero-section {
-  /* height: 100vh; */
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -21,7 +19,7 @@ body {
   z-index: 1;
   background: linear-gradient(
   to top,
-  rgba(0, 0, 0, 1) 0%,       
+    rgba(0, 0, 0, 1) 0%,       
     rgba(0, 0, 0, 0.95) 20%,  
     rgba(0, 0, 0, 0.7) 45%,   
     rgba(0, 0, 0, 0.5) 70%,    
@@ -46,7 +44,6 @@ body {
   z-index: 2;
   pointer-events: none;
 }
-/* ===== Infinite Scroll Animation ===== */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -55,12 +52,11 @@ body {
     transform: translateX(-50%);
   }
 }
-
 .animate-scroll {
   animation: scroll 25s linear infinite;
   display: flex;
   flex-shrink: 0;
-  width: max-content; /* ensures full scrolling area */
+  width: max-content; 
 }
 .animate-scroll:hover {
   animation-play-state: paused;
@@ -72,13 +68,11 @@ body {
           leading-snug sm:leading-normal md:leading-[2.5rem] lg:leading-[4rem] xl:leading-[4.5rem]
 
   }
-
   .sub-heading {
     @apply font-inter font-normal text-white 
            leading-snug sm:leading-normal md:leading-[2rem] lg:leading-[2.5rem] xl:leading-[2.7rem]
            text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.5rem]
   }
-
  .heading2 {
     @apply font-inter font-bold text-white
           text-[1.1rem] sm:text-[1.35rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem]
@@ -86,11 +80,9 @@ body {
            leading-snug sm:leading-normal md:leading-[2rem] lg:leading-[2.5rem] xl:leading-[2.7rem]
            tracking-normal text-center relative z-20;
   }
-
   .subtitle {
     @apply font-inter font-normal text-white
     mb-1 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-4
-
            text-[0.6rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] xl:text-[1rem]
             leading-snug sm:leading-normal md:leading-normal lg:leading-normal xl:leading-normal
            text-center tracking-normal;

@@ -38,7 +38,7 @@ import partnerLogo2 from './Images/Biscuit_ai_logo_converted.webp'
 import partnerLogo3 from './Images/Shelfr logo.webp'
 import partnerLogo4 from './Images/Sythesys logo.webp'
 import partnerLogo5 from './Images/Shotdeck.webp'
-import testimonialImg1 from './Images/clientImg.webp'
+import testimonialImg1 from './Images/Karim.webp'
 import testimonialImg2 from './Images/Justin.webp'
 import workflowImg1 from './Images/reqIcon.webp'
 import workflowImg2 from './Images/feasibilityIcon.webp'
@@ -46,7 +46,7 @@ import workflowImg3 from './Images/protoIcon.webp'
 import workflowImg4 from './Images/devIcon.webp'
 import workflowImg5 from './Images/deployIcon.webp'
 import workflowImg6 from './Images/improveIcon.webp'
-import workflowBackground from './Images/workflowBackground.webp'
+import workflowbg from './Images/workflowbg.webp'
 import techcardIcon1 from './Images/langIcon.webp'
 import techcardIcon2 from './Images/frameworkIcon.webp'
 import techcardIcon3 from './Images/visionIcon.webp'
@@ -73,9 +73,13 @@ import bgRight from './Images/bgRight.webp'
 import LinkedIn from './Images/Link.webp'
 import quote from './Images/“.webp'
 import testimonialBg from './Images/Rectangle.webp'
+import left from './Images/left.webp'
+import right from './Images/right.webp'
 import arrow from './Images/arrow.webp'
 import arrow2 from './Images/arrow2.webp'
 import testimonialOverlay from './Images/testimonialOverlay.webp'
+import leftArrow from './Images/leftArrow.webp'
+import rightArrow from './Images/rightArrow.webp'
 
 export const IMAGES = {
   logo,
@@ -126,7 +130,7 @@ export const IMAGES = {
   workflowImg4,
   workflowImg5,
   workflowImg6,
-  workflowBackground,
+  workflowbg,
   techcardIcon1,
   techcardIcon2,
   techcardIcon3,
@@ -153,7 +157,11 @@ export const IMAGES = {
   LinkedIn,
   quote,
   testimonialBg,
+  left,
+  right,
   arrow,
   arrow2,
-  testimonialOverlay
+  testimonialOverlay,
+  rightArrow,
+  leftArrow
 };

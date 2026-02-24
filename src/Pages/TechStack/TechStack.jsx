@@ -11,8 +11,8 @@ function TechStack() {
      <TechStackHero/>
      <TechCard/>
      <Expertise/>
-      <Testimonial/>
-      <Contact/>
+     <Testimonial/>
+     <Contact/>
     </div>
   )
 }

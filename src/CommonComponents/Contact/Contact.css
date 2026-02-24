@@ -58,24 +58,36 @@ input,
 select,
 textarea {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF33;
   color: #FFFFFF;
   border-radius: 4px;
   outline: none;
   transition: border 0.2s ease;
 }
+input{
+   padding: 5px !important;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #0a1410 inset !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  font-size: 14px !important;
+  font-family: 'Inter', sans-serif !important;
+   padding: 10px !important;
+}
 
  textarea::placeholder {
- 
   font-size: 14px;
-  opacity: 1; 
   padding: 10px;
+  color: #FFFFFF !important;
+  opacity: 1 !important;
 }
  input::placeholder {
-
   font-size: 14px;
-  opacity: 1; 
   padding: 10px;
+  color: #FFFFFF !important;
+  opacity: 1 !important;
 }
 .form-row select {font-size:  14px;
 opacity: 1; 
@@ -113,9 +125,10 @@ textarea {
   align-items: flex-start;
   gap: 0.6rem;
   font-size: 11px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.32px;
   line-height: 100%;
   margin-top: 20px;
+    font-weight: 400;
 }
 
 .form-consent a {

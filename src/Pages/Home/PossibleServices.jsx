@@ -32,25 +32,27 @@ const clipPath =
   "polygon(100% 0, 100% 80%, 80% 100%, 0 100%, 0 0)";
 const iconClipPath =
   "polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%)";
-
-
-
 const PossibleServices = () => {
   return (
-    <section className="bg-black text-white font-inter max-w-[1150px] mx-auto">
+    <section className="bg-black text-white font-inter max-w-[1250px] mx-auto px-4 ">
       {/* Header */}
-      <div className="flex items-center justify-between mb-14">
-        <div>
+     <div
+  className="
+    flex flex-col gap-6
+    md:flex-row md:items-center md:justify-between
+    mb-10 sm:mb-12 md:mb-14
+    text-center md:text-left
+    items-center md:items-start
+  "
+>
+        <div >
           <span className="subtitle">Services</span>
-          <h2 className="heading2">
-            Redefine What's Possible  With AI
-          </h2>
+          <h2 className="heading2">Redefine What's Possible  With AI</h2>
         </div>
-
         {/* Button */}
         <Link to="/contact-us">
           <button className="group flex items-center justify-center gap-[10px] px-6 py-3 rounded-full font-semibold text-[15px] border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
-            Start a Project  <span
+            Start a Project<span
               className="
               inline-flex
               transition-transform duration-300 ease-in-out
@@ -66,15 +68,14 @@ const PossibleServices = () => {
               />
             </span>
           </button></Link>
-
       </div>
-
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-14 lg:gap-16 ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative   w-full
+            className="relative mx-auto 
+            w-full
             max-w-[230px]
             sm:max-w-[320px]
             md:max-w-[349px]
@@ -83,15 +84,16 @@ const PossibleServices = () => {
             {/* Icon */}
             <div
               className="
-                absolute top-0 left-[34.5px]
-                w-[48px] h-[52px]        
-                sm:w-[56px] sm:h-[60px] 
-                md:w-[64px] md:h-[68px] 
-                lg:w-[70px] lg:h-[75px] 
-                xl:w-[76px] xl:h-[80px] 
-                bg-[#348E77]
-                flex items-center justify-center
-                z-10
+                 absolute
+          -top-6
+          left-8
+          md:left-[34.5px]
+          w-[56px] h-[60px]
+          md:w-[64px] md:h-[68px]
+          lg:w-[70px] lg:h-[75px]
+          bg-[#348E77]
+          flex items-center justify-center
+          z-20
                 "
               style={{ clipPath: iconClipPath }}
             >
@@ -102,7 +104,8 @@ const PossibleServices = () => {
               />
             </div>
             {/* Text Container */}
-            <div className="absolute bottom-0  w-full
+            <div className="relative
+              w-full
               max-w-[230px]      
               sm:max-w-[320px]   
               md:max-w-[349.78px] 
@@ -144,9 +147,7 @@ const PossibleServices = () => {
                   {service.desc}
                 </p>
               </div>
-
             </div>
-
           </div>
         ))}
       </div>

@@ -11,11 +11,12 @@ import Footer from './CommonComponents/Footer/Footer'
 import PageNotFound from './Pages/PageNotFound'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
-
+import ScrollTop from "./Pages/ScrollTop";
 function App() {
   return (
      <div className="App bg-[#000000] text-white font-inter">
       <Router>
+         <ScrollTop /> 
       <Navbar/>
        <Routes>
         <Route path="/" element={<Home />} />

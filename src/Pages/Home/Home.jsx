@@ -18,18 +18,7 @@ import PossibleServices from './PossibleServices'
 function Home() {
   return (
     <div>
-      <div
-  className="
-    absolute
-    w-[902px] h-[902px]
-    rounded-full
-    top-[5950px]
-    right-1/2
-    pointer-events-none
-    bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.4)_0%,rgba(43,112,109,0)_100%)]
-    backdrop-blur-[64px]
-  "
-/>
+
         <HomeHero/>
         <About/>
         <Impact/>

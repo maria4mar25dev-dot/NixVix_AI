@@ -13,7 +13,7 @@ const techData = [
 
 function TechCards() {
   return (
-    <div className="relative z-[1] -mt-[80px] sm:-mt-[30px] md:mt-0 flex flex-col items-center justify-center w-full py-0 sm:py-0 md:py-10 lg:py-20 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.6)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px]rounded-fullopacity-70 overflow-hidden">
+    <div className="relative z-[1] mt-0 flex flex-col items-center justify-center w-full py-0 sm:py-0 md:py-10 lg:py-20 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.6)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px] rounded-full  overflow-hidden">
       {/* Section Titles */}
       <h3 className="subtitle">Tech Stack</h3>
       <h2 className="heading2">
@@ -26,7 +26,11 @@ function TechCards() {
           {[...techData, ...techData].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-start items-start bg-[#111] rounded-xl w-[110px] sm:w-[110px] md:w-[150px] lg:w-[190px]  p-2 sm:p-2 md:p-4  sm:h-[150px]  md:h-[154px]   lg:h-[180px] sm:hover:h-[180px] md:hover:h-[200px] lg:hover:h-[230px]   cursor-pointer  transition-all duration-500 hover:bg-[linear-gradient(225.96deg,_#0C0C0C_-0.36%,_#224A51_181.51%)]
+              className="flex flex-col justify-start items-start bg-[#111] rounded-md        /* mobile */
+sm:rounded-lg     /* small screens */
+md:rounded-xl     /* tablets */
+lg:rounded-xl    /* large */
+ w-[110px] sm:w-[110px] md:w-[150px] lg:w-[190px]  p-2 sm:p-2 md:p-4  sm:h-[150px]  md:h-[154px]   lg:h-[180px] sm:hover:h-[180px] md:hover:h-[200px] lg:hover:h-[230px]   cursor-pointer  transition-all duration-500 hover:bg-[linear-gradient(225.96deg,_#0C0C0C_-0.36%,_#224A51_181.51%)]
               hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)] transform hover:-translate-y-1 group"
             >
               {/* Icon */}

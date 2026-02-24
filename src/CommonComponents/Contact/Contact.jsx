@@ -343,8 +343,8 @@ function Contact({ alt }) {
                     className="consent-checkbox"
                   />
                   <label htmlFor="consent">
-                    I have reviewed the <a href="/">Privacy Policy</a> and give my consent to
-                    the sending of messages.
+                    I Have Reviewed The <a href="/">Privacy Policy</a> And Give My Consent To
+                    The Sending Of Messages.
                   </label>
                 </div>
                 {errors.consent && <p className="error-text">{errors.consent}</p>}

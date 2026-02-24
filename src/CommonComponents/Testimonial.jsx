@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { IMAGES } from "../Images";
 
 const testimonials = [
@@ -8,14 +6,14 @@ const testimonials = [
     id: 1,
     text: "Nixense Vision was incredible to work with. They were our go-to team for  everything AI and Machine Learning. From bespoke solutions to production-ready  systems, their work was consistently top-notch. Truly an A+ partner.",
     name: "JUSTIN MCAULEY",
-    image: IMAGES.testimonialImg1,
+    image: IMAGES.testimonialImg2,
     meta: "Head of Product, iBright Studios"
   },
   {
     id: 2,
     text: "Ahmer from Nixense Vision is highly intelligent with strong analytical skills. He handled challenges with a great attitude, delivering quality computer vision solutions quickly and professionally. I highly recommend working with him.",
     name: "KARIM TRIBAK",
-    image: IMAGES.testimonialImg2,
+    image: IMAGES.testimonialImg1,
     meta: "CTO, Foxtrapp"
   },
 ];
@@ -39,24 +37,31 @@ function Testimonial() {
       <h3 className="subtitle">Clients</h3>
       <h2 className="heading2">Testimonials</h2>
 
-      <div className="relative rounded-[46px] p-[19px] max-w-[1090px] mx-auto overflow-hidden">
+      <div
+        className="
+    relative
+    mx-auto
+    max-w-[1090px]
+    overflow-hidden
+    p-[10px] sm:p-[14px] md:p-[18px] lg:p-[22px]
+    rounded-[24px] sm:rounded-[32px] md:rounded-[40px] lg:rounded-[46px]
+  "
+      >
+
         {/* BORDER */}
         <div
-          className="absolute inset-0 rounded-[46px]"
+          className="absolute inset-0 rounded-inherit"
           style={{
             background: `
-
-radial-gradient(
-  130% 130% at 0% 0%, 
-  rgba(255, 255, 255, 0.3) 30%, 
-  rgba(255, 255, 255, 0.01) 100%
-)
-
-
-    
+      radial-gradient(
+        120% 120% at 0% 0%,
+        rgba(255,255,255,0.18) 25%,
+        rgba(255,255,255,0.01) 100%
+      )
     `,
           }}
         />
+
         <div
           className="absolute inset-0 rounded-[27px] pointer-events-none"
           style={{
@@ -69,32 +74,38 @@ radial-gradient(
         />
 
         {/* CONTENT */}
-        <div className="relative bg-black p-8 rounded-[27px] overflow-hidden">
+        <div
+          className="
+    relative bg-black overflow-hidden
+    p-4 sm:p-6 md:p-8
+
+    rounded-[18px] sm:rounded-[24px] md:rounded-[32px] lg:rounded-[36px]
+  "
+        >
+
           {/* TEXTURE IMAGE OVERLAY */}
-
-
           <div
-            className="absolute inset-0 rounded-[27px] backdrop-blur-[151px]"
+            className="absolute inset-0 rounded-[27px] backdrop-blur-0"
             style={{
               background:
                 "linear-gradient(to bottom right, rgba(255,255,255,0.22) 1.8%, rgba(254,248,255,0) 100%)",
             }}
           />
 
-   <div
-          className="absolute inset-0 rounded-[27px] pointer-events-none"
-          style={{
-            backgroundImage: `url(${IMAGES.testimonialOverlay})`,
-            backgroundRepeat: "repeat",   // scale: tile
-            backgroundSize: "auto",
-            opacity: 0.2,                 // opacity 20%
-            mixBlendMode: "multiply",     // blend: multiply
-          }}
-        />
+          <div
+            className="absolute inset-0 rounded-[27px] pointer-events-none"
+            style={{
+              backgroundImage: `url(${IMAGES.testimonialOverlay})`,
+              backgroundRepeat: "repeat",   // scale: tile
+              backgroundSize: "auto",
+              opacity: 0.2,                 // opacity 20%
+              mixBlendMode: "multiply",     // blend: multiply
+            }}
+          />
 
           {/* Quote Content */}
           <div className="w-full relative z-10">
-            
+
             <img
               src={IMAGES.quote}
               alt="quote"
@@ -102,10 +113,10 @@ radial-gradient(
             />
             <p
               className="
-              text-white font-[Prompt] font-extralight sm:font-light md:font-normal px-2 sm:px-3 md:px-5 lg:px-8 text-center
-              text-[12px] sm:text-[14px] md:text-[0.85rem] lg:text-[0.95rem]
+              text-white font-[Prompt] font-extralight sm:font-light md:font-normal px-0 sm:px-3 md:px-5 lg:px-8 text-center
+              text-[12px] sm:text-[14px] md:text-[0.85rem] lg:text-[1.1rem]
               leading-[1rem] sm:leading-[1.1rem] md:leading-[1.2rem] lg:leading-[1.6rem]
-              tracking-[1px] sm:tracking-[1px] md:tracking-[1.5px] italic
+              tracking-[1px] sm:tracking-[1px] md:tracking-[1.5px] italic mt-6
             "
             >
               “{text}”
@@ -115,7 +126,7 @@ radial-gradient(
           {/* Client Info + Arrows */}
           <div
             className="
-            flex items-center justify-between mt-1 sm:mt-2 md:mt-3 lg:mt-4
+            flex items-center justify-between mt-1 sm:mt-2 md:mt-3 lg:mt-8
             w-full flex-wrap relative z-10
           "
           >
@@ -124,28 +135,35 @@ radial-gradient(
               onClick={handlePrev}
               className="text-gray-300 hover:text-white transition-colors duration-300"
             >
-              <FontAwesomeIcon
-                icon={faArrowLeft}
-                className="text-xs sm:text-xs md:text-xl lg:text-2xl"
+              <img
+                src={IMAGES.left}   // import or path to your image
+                alt="arrow"
+                className="w-3 h-2 sm:w-3 sm:h-3 md:w-5 md:h-5 lg:w-8 lg:h-4"
               />
-            </button>
 
+            </button>
             {/* Name + Image */}
             <div className="flex flex-col items-center mx-3">
-              <img
-                src={image}
-                alt={name}
-                className="
-                w-9 h-9 md:w-14 md:h-14 sm:w-12 sm:h-12 xs:w-10 xs:h-10
-                rounded-full border-2 sm:border-3 md:border-4 lg:border-4 border-[#27f0d5]
-                mb-2
-              "
-              />
+              <div
+                className="rounded-full p-[1px] sm:p-[2px] md:p-[2px] lg:p-[3px]  mb-2"
+                style={{
+                  background: `radial-gradient(82.86% 82.86% at 28.57% 17.14%,#2B706D 0%,#2B706D 100% )`,
+                }}
+              >
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-8 h-8 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-[80px] lg:h-[80px] rounded-full object-cover bg-black"
+                />
+              </div>
               <p
                 className="
                font-[Inter]
                font-medium
-               text-[19px]
+               text-[12px]
+               sm:text-[14px]
+               md:text-[16px]
+               lg:text-[19px]
                leading-[32px]
                tracking-[0.95px]
                text-center
@@ -157,9 +175,12 @@ radial-gradient(
               </p>
               <p
                 className="
-                font-[Inter]
+               font-[Inter]
                font-light
-               text-[18px]
+               text-[11px]
+               sm:text-[13px]
+               md:text-[16px]
+               lg:text-[18px]
                leading-[32px]
                tracking-[0px]
                text-center
@@ -175,9 +196,10 @@ radial-gradient(
               onClick={handleNext}
               className="text-gray-300 hover:text-white transition-colors duration-300"
             >
-              <FontAwesomeIcon
-                icon={faArrowRight}
-                className="text-xs sm:text-xs md:text-xl lg:text-2xl"
+              <img
+                src={IMAGES.right}   // import or path to your image
+                alt="arrow"
+                className="w-3 h-2 sm:w-3 sm:h-3 md:w-5 md:h-5 lg:w-8 lg:h-4"
               />
             </button>
           </div></div></div>

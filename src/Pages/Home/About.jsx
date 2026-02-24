@@ -11,12 +11,12 @@ function About() {
   return (
     <div>
       {/* Arrow */}
-  <div className="flex justify-center mt-24">
+  <div className="flex justify-center mt-0 sm:mt-8 md:mt-18 lg:mt-24">
     <img
       src={IMAGES.arrow2}
       alt="arrow"
       onClick={scrollToAbout}
-      className="w-[35px] h-auto object-contain cursor-pointer   transition-all duration-300 ease-in"
+      className="w-[20px] md:w-[25px] lg:w-[35px] h-auto object-contain cursor-pointer transition-all duration-300 ease-in"
     />
   </div>
    <section
@@ -45,7 +45,7 @@ function About() {
     </p>
 
     {/* Buttons */}
-    <div className="flex gap-4 justify-start">
+   <div className="flex flex-col items-center gap-4 sm:flex-col sm:items-center md:flex-row md:justify-start lg:flex-row lg:justify-start">
       <Link to="/about">
         <button className="px-6 py-3 rounded-full font-medium text-[18px] bg-[#2E7A77] text-white shadow-[0px_4px_54px_0px_#00000040] transition-all duration-300 ease-in hover:border-2 hover: border-[#51CBC6]">
           Read More

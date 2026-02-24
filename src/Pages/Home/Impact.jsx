@@ -10,42 +10,37 @@ function Impact({ solution = false }) {
         py-2 sm:py-3 md:py-4
       "
     >
-      {/* Left Gradient */}
 <div
   className="
-    absolute 
-    w-[384px] h-[384px]  
-    top-[-60px] sm:top-[-70px] md:top-[58px] 
-    left-[-100px] sm:left-[-120px] md:left-[-150px] 
-    pointer-events-none 
-    z-0 
-     bg-[#2B706D36]
-  backdrop-blur-[134.3px]
-  rounded-full
-
-
-  "
-></div>
-
-{/* Right Gradient */}
-<div
-  className="
-    absolute 
-    w-[384px] h-[384px] 
-  
-    top-[50px] sm:top-[70px] md:top-[266px] 
-    right-[-100px] sm:right-[-120px] md:right-[-150px] 
-    pointer-events-none 
-    z-0 
+    absolute
+    w-[35vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw]
+    aspect-square
+    top-[5%] sm:top-[8%] md:top-[10%]
+    left-[-15%] sm:left-[-12%] md:left-[-10%]
     bg-[#2B706D36]
-  backdrop-blur-[134.3px]
-  rounded-full
-
-
+    backdrop-blur-[120px]
+    rounded-full
+    pointer-events-none
+    z-0
   "
-></div>
+/>
 
-      {/* Background Element 2 */}
+<div
+  className="
+    absolute
+    w-[35vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw]
+    aspect-square
+    top-[20%] sm:top-[25%] md:top-[35%]
+    right-[-15%] sm:right-[-12%] md:right-[-10%]
+    bg-[#2B706D36]
+    backdrop-blur-[120px]
+    rounded-full
+    pointer-events-none
+    z-0
+  "
+/>
+
+{/* Background Element 2 */}
 <img
   src={IMAGES.bgElement2}
   alt=""
@@ -54,7 +49,7 @@ function Impact({ solution = false }) {
     top-[35%] sm:top-[38%] md:top-[40%] 
     left-1/2 
     -translate-x-1/2 -translate-y-1/2 
-    w-[90%] sm:w-[95%] md:w-full 
+    w-[50%] sm:w-[50%] md:w-full 
     h-auto 
     opacity-50 
     z-0 
@@ -79,10 +74,8 @@ function Impact({ solution = false }) {
     blur-sm
   "
 />
-
-
       {/* Heading */}
-      <h2 className="heading2 ">
+      <h2 className="heading2 sm:mt-6 mt-6">
         The Nixvix Impact
       </h2>
 
@@ -91,13 +84,13 @@ function Impact({ solution = false }) {
         className="
           relative z-[1] flex justify-around items-center flex-wrap
           gap-2 sm:gap-3 md:gap-6 lg:gap-8 xl:gap-12
-         rounded-[150px]
+          rounded-[150px]
           px-2 sm:px-4 md:px-10
           py-6 sm:py-8 md:py-10 lg:py-14
           max-w-[90%] mx-auto mt-4 sm:mt-8 md:mt-16 lg:mt-20 mb-4 sm:mb-8 md:mb-12 lg:mb-32
-         bg-white/5
-         backdrop-blur-[8px] 
-         border-2 border-[#1C1C1C]
+          bg-white/5
+          backdrop-blur-[8px] 
+          border-2 border-[#1C1C1C]
         "
       >
         {[
@@ -133,7 +126,7 @@ function VisionMission() {
   return (
     <section
   className="
-    w-[95%] max-w-[1350px] mx-auto 
+    w-[95%] max-w-[1250px] mx-auto 
     my-8 sm:my-10 md:my-20 lg:my-24 
     text-white text-center md:text-left relative z-[5]
   "
@@ -154,7 +147,7 @@ function VisionMission() {
     >
       <h2
         className="
-          text-[16px] sm:text-[16px] md:text-xl lg:text-2xl 
+          text-[16px] sm:text-[16px]  md:text-[20px] lg:text-[25px]
           font-bold mb-3 sm:mb-4 md:mb-5
         "
       >
@@ -163,7 +156,7 @@ function VisionMission() {
       <p
         className="
            text-[#A9A9A9] 
-          leading-5 sm:leading-6 md:leading-8 text-[12px] sm:text-[14px] md:text-sm lg:text-base 
+          leading-5 sm:leading-6 md:leading-[28px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]
         "
       > 
       To redefine what's possible with AI by listening deeply, building fearlessly, and scaling responsibly making intelligence accessible, ethical, and impactful.
@@ -179,7 +172,7 @@ function VisionMission() {
     >
       <h2
         className="
-          text-[16px] sm:text-[16px] md:text-xl lg:text-2xl 
+          text-[16px] sm:text-[16px] md:text-[20px] lg:text-[25px]
           font-bold mb-3 sm:mb-4 md:mb-5
         "
       >
@@ -187,8 +180,8 @@ function VisionMission() {
       </h2>
       <p
         className="
-          text-[#A9A9A9]
-          leading-5 sm:leading-6 md:leading-8 text-[12px] sm:text-[14px] md:text-sm lg:text-base 
+          text-[#A9A9A9] 
+          leading-5 sm:leading-6 md:leading-[28px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px] 
         "
       >
         To be the global catalyst for human-centered AI innovation shaping a smarter, more connected future, one algorithm at a time.
@@ -196,7 +189,6 @@ function VisionMission() {
     </div>
   </div>
 </section>
-
   );
 }
 

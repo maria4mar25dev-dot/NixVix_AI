@@ -70,17 +70,17 @@ function Footer() {
   <div className="flex flex-wrap justify-center md:flex-col md:justify-start gap-4 md:gap-3 text-sm sm:text-[15px] font-light">
 
     <div className="flex items-center gap-2">
-      <img src={IMAGES.locationIcon} className="w-4 h-4" />
+      <img src={IMAGES.locationIcon} className="w-4 h-4"  alt="location"/>
       <span>Lahore</span>
     </div>
 
     <div className="flex items-center gap-2">
-      <img src={IMAGES.contactIcon} className="w-4 h-4" />
+      <img src={IMAGES.contactIcon} className="w-4 h-4"  alt="contact"/>
       <span>+92 307 5741522</span>
     </div>
 
     <div className="flex items-center gap-2">
-      <img src={IMAGES.emailIcon} className="w-4 h-4" />
+      <img src={IMAGES.emailIcon} className="w-4 h-4"  alt="email" />
       <span>hello@nixvix.ai</span>
     </div>
 

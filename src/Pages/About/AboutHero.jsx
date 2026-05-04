@@ -4,14 +4,16 @@ import { IMAGES } from '../../Images';
 function AboutHero() {
   return (
     <div
-      className="relative flex flex-col items-center justify-center text-center min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${IMAGES.heroImg7})` }}
+      className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 md:px-10"
+      style={{ backgroundImage: `url(${IMAGES.heroImg7})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center", }}
     >
       {/* Overlay */}
       <div className="overlay"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1200px] px-4 sm:px-6 md:px-10 lg:px-16  py-10 sm:py-14 md:py-20 lg:py-24  mt-10 sm:mt-16 md:mt-20 lg:mt-24">
+      <div className="relative z-10 max-w-[1200px] lg:mt-32">
 
         {/* Main Heading */}
         <h1 className="heading1">
@@ -24,8 +26,8 @@ function AboutHero() {
         </h2>
 
         <p
-          className="font-inter text-white font-normal md:my-5 sm:my-4 my-2 max-w-[1078px] mx-auto text-justify
-            text-[12px] sm:text-[14px] md:text-base lg:text-lg xl:text-xl leading-5 sm:leading-6 md:leading-8
+          className="ptext font-inter text-white font-normal md:my-5 sm:my-4 my-2 max-w-[1078px] mx-auto text-justify
+             leading-5 sm:leading-6 md:leading-8
              [text-align-last:center]"
         >
           We help businesses identify opportunities and transform them into reality through generative,

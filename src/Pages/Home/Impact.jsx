@@ -3,192 +3,114 @@ import { IMAGES } from "../../Images";
 
 function Impact({ solution = false }) {
   return (
-    <section
-      className="
-        relative w-[93%] mx-auto mb-4 sm:mb-8 md:mb-10 lg:mb-12 text-center text-white overflow-hidden
-        px-0 sm:px-2 md:px-5
-        py-2 sm:py-3 md:py-4
-      "
-    >
-<div
-  className="
-    absolute
-    w-[35vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw]
-    aspect-square
-    top-[5%] sm:top-[8%] md:top-[10%]
-    left-[-15%] sm:left-[-12%] md:left-[-10%]
-    bg-[#2B706D36]
-    backdrop-blur-[120px]
-    rounded-full
-    pointer-events-none
-    z-0
-  "
-/>
 
-<div
-  className="
-    absolute
-    w-[35vw] sm:w-[30vw] md:w-[25vw] lg:w-[20vw]
-    aspect-square
-    top-[20%] sm:top-[25%] md:top-[35%]
-    right-[-15%] sm:right-[-12%] md:right-[-10%]
-    bg-[#2B706D36]
-    backdrop-blur-[120px]
-    rounded-full
-    pointer-events-none
-    z-0
-  "
-/>
+    <section className={`relative w-full overflow-hidden text-white px-[20px] sm:px-[40px]  ${solution ? "py-8 md:py-12" : "py-16 md:py-18"}`}>
 
-{/* Background Element 2 */}
-<img
-  src={IMAGES.bgElement2}
-  alt=""
-  className="
-    absolute 
-    top-[35%] sm:top-[38%] md:top-[40%] 
-    left-1/2 
-    -translate-x-1/2 -translate-y-1/2 
-    w-[50%] sm:w-[50%] md:w-full 
-    h-auto 
-    opacity-50 
-    z-0 
-    pointer-events-none 
-    blur-sm
-  "
-/>
+      {/* LEFT GLOW */}
+      <div className={`absolute left-[-5%] top-[30%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-30 blur-[100px] rounded-full z-[1]`} />
 
-{/* Background Element 3 */}
-<img
-  src={IMAGES.bgElement3}
-  alt=""
-  className="
-    absolute 
-    top-[150px] sm:top-[200px] md:top-[250px]  lg:top-[420px] 
-    left-[80px] sm:left-[120px] md:left-[160px] 
-    w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] xl:w-[280px] 
-    h-auto 
-    opacity-70 
-    z-0
-    pointer-events-none 
-    blur-sm
-  "
-/>
-      {/* Heading */}
-      <h2 className="heading2 sm:mt-6 mt-6">
-        The Nixvix Impact
-      </h2>
+      {/* RIGHT GLOW */}
+      <div className={`absolute right-[-5%] top-[40%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-30 blur-[100px] rounded-full z-[1]`} />
 
-      {/* Stats Box */}
-      <div
-        className="
-          relative z-[1] flex justify-around items-center flex-wrap
-          gap-2 sm:gap-3 md:gap-6 lg:gap-8 xl:gap-12
-          rounded-[150px]
-          px-2 sm:px-4 md:px-10
-          py-6 sm:py-8 md:py-10 lg:py-14
-          max-w-[90%] mx-auto mt-4 sm:mt-8 md:mt-16 lg:mt-20 mb-4 sm:mb-8 md:mb-12 lg:mb-32
-          bg-white/5
-          backdrop-blur-[8px] 
-          border-2 border-[#1C1C1C]
-        "
-      >
-        {[
-          { value: "80+", text: "AI Projects\nDelivered" },
-          { value: "70+", text: "Global Clients\nServed" },
-          { value: "10+", text: "Years Driving\nAI Innovation" },
-          { value: "100%", text: "Client\nSatisfaction" },
-        ].map((stat, i) => (
-          <div key={i} className="text-center">
-            <h3 className="text-[16px] sm:text-[16px] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-bold mb-2">
-              {stat.value}
-            </h3>
-            <p className="text-gray-300 text-[0.5rem] sm:text-[0.6rem] md:text-[0.7rem] lg:text-[0.8rem] xl:text-[0.9rem] leading-snug whitespace-pre-line">
-              {stat.text}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* Top-right image */}
+      {/* CENTER BACKGROUND SHAPE */}
       <img
-        src={IMAGES.bgElement}
+        src={IMAGES.bgElement2}
+        className={`absolute  left-1/2  -translate-x-1/2  ${solution
+          ? "top-[70%] -translate-y-1/2"
+          : "top-[40%] -translate-y-1/2"
+          } opacity-40 blur-[1px] w-[80%] max-w-[900px] z-0`}
         alt=""
-        className="absolute top-[10px] right-[-10px] w-[50px] sm:w-[80px] md:w-[100px] lg:w-[110px] xl:w-[120px] opacity-80 pointer-events-none z-[3]"
       />
 
+      {/* FLOATING OBJECT */}
+      <img
+        src={IMAGES.bgElement3}
+        className={`absolute  ${solution
+         ? "left-[15%] top-[90%] -translate-y-1/2"
+         : "left-[15%] top-[60%] -translate-y-1/2"
+          } w-[120px] md:w-[180px] opacity-80 blur-[1px] z-0`}
+        alt=""
+      />
+
+      {/* TOP RIGHT ELEMENT */}
+
+      {!solution && (
+        <img
+          src={IMAGES.bgElement}
+          className="absolute right-0 top-[10%] w-[50px] sm:w-[70px] md:w-[100px] opacity-80 z-0"
+          alt=""
+        />
+      )}
+
+      {/* CONTENT */}
+      <div className="relative z-[2] mx-auto text-center">
+
+        {/* HEADING */}
+        <h2 className="heading2 mb-10 md:mb-16">
+          The Nixvix Impact
+        </h2>
+
+        {/* GLASS STATS CARD */}
+        {/* <div className="max-w-[1248px] mx-auto backdrop-blur-[8px] bg-white/5 border-2 border-[#1C1C1C] rounded-[150px]  py-8 md:py-12 flex flex-wrap md:flex-nowrap justify-around items-center gap-6 md:gap-0"> */}
+        <div className="
+             max-w-[1248px] mx-auto
+             backdrop-blur-[2px] bg-white/5 border border-[#1C1C1C]
+             rounded-[30px] md:rounded-[150px] lg:rounded-[150px]
+             py-6 sm:py-8 md:py-12
+             grid grid-cols-2 md:grid-cols-4
+             gap-6 md:gap-0
+             text-center
+             ">
+          {[
+            { value: "80+", text: "AI Projects\nDelivered" },
+            { value: "70+", text: "Global Clients\nServed" },
+            { value: "10+", text: "Years Driving\nAI Innovation" },
+            { value: "100%", text: "Client\nSatisfaction" },
+          ].map((stat, i) => (
+            <div key={i} className="text-center">
+              <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[35px] xl:text-[35px] font-bold mb-2">
+                {stat.value}
+              </h3>
+              <p className="ptext text-gray-300  leading-snug whitespace-pre-line">
+                {stat.text}
+              </p>
+            </div>
+          ))}
+
+        </div></div>
       {!solution && <VisionMission />}
     </section>
+
+
   );
 }
 
 function VisionMission() {
   return (
-    <section
-  className="
-    w-[95%] max-w-[1250px] mx-auto 
-    my-8 sm:my-10 md:my-20 lg:my-24 
-    text-white text-center md:text-left relative z-[5]
-  "
->
-  <div
-    className="
-      flex flex-col md:flex-row 
-      justify-between sm:gap-2 gap-2
-     
-    "
-  >
-    {/* Mission */}
-    <div
-      className="
-        flex-1 max-w-[650px]
-        px-3 sm:px-4 md:px-3 lg:px-4 xl:px-4
-      "
-    >
-      <h2
-        className="
-          text-[16px] sm:text-[16px]  md:text-[20px] lg:text-[25px]
-          font-bold mb-3 sm:mb-4 md:mb-5
-        "
-      >
-        Our Mission
-      </h2>
-      <p
-        className="
-           text-[#A9A9A9] 
-          leading-5 sm:leading-6 md:leading-[28px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px]
-        "
-      > 
-      To redefine what's possible with AI by listening deeply, building fearlessly, and scaling responsibly making intelligence accessible, ethical, and impactful.
-      </p>
-    </div>
 
-    {/* Vision */}
-    <div
-      className="
-        flex-1 max-w-[650px]
-         px-3 sm:px-4 md:px-3 lg:px-4 xl:px-4
-      "
-    >
-      <h2
-        className="
-          text-[16px] sm:text-[16px] md:text-[20px] lg:text-[25px]
-          font-bold mb-3 sm:mb-4 md:mb-5
-        "
-      >
-        Our Vision
-      </h2>
-      <p
-        className="
-          text-[#A9A9A9] 
-          leading-5 sm:leading-6 md:leading-[28px] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[18px] 
-        "
-      >
-        To be the global catalyst for human-centered AI innovation shaping a smarter, more connected future, one algorithm at a time.
-      </p>
+    <div className="relative z-[10] mt-16 md:mt-24 lg:mt-32 max-w-[1168px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center md:text-left lg:text-left mb-28">
+
+      <div>
+        <h3 className="pheading font-bold mb-2">
+          Our Mission
+        </h3>
+        <p className="ptext text-[#A9A9A9] leading-relaxed">
+          To redefine what's possible with AI by listening deeply, building fearlessly,
+          and scaling responsibly making intelligence accessible, ethical, and impactful.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="pheading font-bold mb-2">
+          Our Vision
+        </h3>
+        <p className="ptext text-[#A9A9A9] leading-relaxed">
+          To be the global catalyst for human-centered AI innovation shaping a smarter,
+          more connected future, one algorithm at a time.
+        </p>
+      </div>
+
     </div>
-  </div>
-</section>
   );
 }
 

@@ -1,78 +1,106 @@
 import React from 'react'
 import { IMAGES } from "../../Images";
+import { Link } from 'react-router-dom';
+
 const services = [
   {
     id: 1,
     title: "Generative AI",
     description: "Generative AI creates new content from data.",
     image: IMAGES.item1,
-    className: "item1",
   },
   {
     id: 2,
     title: "Computer Vision",
     description: "Computer Vision enables machines to understand and interpret visual data.",
     image: IMAGES.item2,
-    className: "item2",
-    gridSpan: "2 / span 2",
   },
   {
     id: 3,
     title: "LLMs & Agentic AI",
     description: "LLMs & Agentic AI power intelligent reasoning and autonomous decision-making.",
     image: IMAGES.item3,
-    className: "item3",
-    gridSpan: "1 / span 2",
   },
   {
     id: 4,
     title: "Machine Learning & Predictive Analytics",
     description: "Machine Learning & Predictive Analytics predict future trends.",
     image: IMAGES.item4,
-    className: "item4",
   },
   {
     id: 5,
     title: "MLOps, Serverless & Scalable",
     description: "MLOps, Serverless & Scalable ensure efficient, flexible AI deployment.",
     image: IMAGES.item5,
-    className: "item5",
-    gridSpan: "1 / span 3",
   },
-]
+];
 
 function Possibilities() {
   return (
-    <div className='mx-[20px] sm:mx-[40px] mt-0 mb-24 sm:mb-20 md:mb-0'>
-      <h3 className="subtitle">Services</h3>
-        <h2 className="heading2">Redefine what's possible with AI</h2>
-    <div className="w-[100%] max-w-[1350px] mx-auto mb-16 my-8 md:my-16 border border-[#2B2B2B] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[150px] sm:auto-rows-[200px] md:auto-rows-[250px] lg:auto-rows-[360px] gap-[1px]">
-  {services.map((service) => (
-    <div
-      key={service.id}
-      className={`relative text-white font-sans overflow-hidden border border-[#2B2B2B] ${service.className}`}
-      style={{
-        background: `url(${service.image}) center/cover no-repeat`,
-        gridColumn: service.gridSpan || "auto",
-      }}
-    >
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none" />
+    <div className="max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mb-20">
 
-      {/* Circle Icon */}
-      <div className="absolute top-5 left-5 w-[10px] h-[10px] border-2 border-white rounded-full bg-transparent z-10" />
+      {/* Top Section */}
+      <div className="flex items-center justify-between flex-wrap  mb-8">
+        <div>
+          <span className="subtitle">Services</span>
+          <h2 className="heading2 mb-2 text-left">
+            Redefine What's Possible With AI
+          </h2>
+        </div>
 
-      {/* Content */}
-      <div className="absolute bottom-6 left-6 text-left z-10">
-        <h3 className="text-[16px] sm:text-[16px] md:text-xl lg:text-[1rem] xl:text-[1.45rem] font-bold mb-1">{service.title}</h3>
-        <p className="text-[12px] sm:text-[14px] md:text-sm lg:text-base xl:text-[1.05rem] text-white/70">{service.description}</p>
+        <Link to="/contact-us">
+          <button className="btext group flex items-center mt-2 gap-[10px] px-6 py-3 rounded-full font-semibold border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
+            Start a Project
+            <span className="inline-flex transition-transform duration-300 group-hover:rotate-[45deg] group-hover:translate-x-[2px]">
+              <img
+                src={IMAGES.arrow}
+                alt="arrow"
+                className="w-[12px] h-[18px] object-contain"
+              />
+            </span>
+          </button>
+        </Link>
+      </div>
+
+      {/* Grid Section */}
+      <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px]">
+
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className={`
+              relative text-white overflow-hidden border border-[#2B2B2B]
+              min-h-[220px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[383px]
+
+              ${service.id === 2 ? "lg:col-span-2" : ""}
+              ${service.id === 3 ? "lg:col-span-2" : ""}
+              ${service.id === 5 ? "lg:col-span-3" : ""}
+            `}
+            style={{
+              background: `url(${service.image}) center/cover no-repeat`,
+            }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+
+            {/* Circle Icon */}
+            <div className="absolute top-5 left-5 w-[10px] h-[10px] border-2 border-white rounded-full z-10" />
+
+            {/* Content */}
+            <div className="absolute bottom-6 left-6 z-10">
+              <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[28px] md:leading-[36px] lg:leading-[45px] font-bold font-inter mb-1">
+                {service.title}
+              </h3>
+              <p className="  text-[14px] sm:text-[15px]  md:text-[16px]  lg:text-[17.25px]   md:leading-[26px] lg:leading-[28.75px] font-medium tracking-[-0.02em] font-inter text-white/70">
+                {service.description}
+              </p>
+            </div>
+          </div>
+        ))}
+
       </div>
     </div>
-  ))}
-</div>
-
-    </div>
-  )
+  );
 }
 
-export default Possibilities
+export default Possibilities;

@@ -1,7 +1,7 @@
 .outer-container{
   width: 93%;
   margin: auto;
- padding: 50px 0px;
+ 
 }
 
 .workflow-section {
@@ -46,7 +46,6 @@
 }
 
 .workflow-text {
-  font-size: 16px;
   font-weight: 500;
   white-space: pre-line;
   margin-top: 15px; 
@@ -129,7 +128,6 @@
   }
 
   .workflow-text {
-    font-size: 14px;
     margin-top: 10px;
     text-align: center;
     position: static !important;
@@ -153,7 +151,7 @@
 
 @media (max-width: 768px) {
  .workflow-section{
-  padding: 40px 15px 0px 15px;
+  padding: 40px 0px 0px 0px;
  }
   .workflow-item {
     width: 100%;
@@ -165,7 +163,6 @@
     position: static !important;
     transform: none !important;
     margin-top: 10px;
-    font-size: 14px;
     text-align: center;
   }
 
@@ -183,13 +180,16 @@
   .workflow-item::after {
     display: none !important;
   }
+  .outer-container{
+    padding: 40px 0px;
+  }
 }
 
 @media (max-width: 480px) {
   .workflow-steps {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     justify-items: center;
     align-items: start;
     margin-top: 0;
@@ -216,7 +216,6 @@
   }
 
   .workflow-text {
-    font-size: 12px;
     line-height: 1.4;
   }
   .outer-container{

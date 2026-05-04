@@ -34,7 +34,7 @@ function Workflow() {
             <div className="circle">
               <img src={step.icon} alt={step.title} />
             </div>
-            <p className="workflow-text">{step.title}</p>
+            <p className="ptext workflow-text">{step.title}</p>
           </div>
         ))}
       </div>

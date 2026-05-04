@@ -64,12 +64,9 @@ const techData = [
 
 function Expertise() {
   return (
-    <div className="relative max-w-[1200px] mx-[15px] sm:mx-[20px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mb-6 md:mb-8  py-10">
+    <div className="relative max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mb-6 md:mb-8  py-10">
       {/* Glowing radial background */}
-      <div className="absolute  inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.3)_0%,rgba(43,112,109,0)_100%)]
- backdrop-blur-[64px]
-rounded-full
-"></div>
+      <div className="absolute  inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.3)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px] rounded-full"></div>
 
       {/* Heading */}
       <h2 className="heading2 text-center mb-10">Expertise</h2>
@@ -94,10 +91,10 @@ rounded-full
 
             {/* Content */}
             <div className="flex flex-col items-start">
-              <h3 className="text-[14px] sm:text-[16px] md:text-[20px] font-semibold mb-2">
+              <h3 className="pheading font-semibold mb-2">
                 {item.title}
               </h3>
-              <p className="text-[12px] sm:text-[14px] md:text-[16px] leading-[22px] sm:leading-[24px] md:leading-[26px] text-gray-300">
+              <p className="ptext  leading-[22px] sm:leading-[24px] md:leading-[26px] text-gray-300">
                 {item.description}
               </p>
             </div>

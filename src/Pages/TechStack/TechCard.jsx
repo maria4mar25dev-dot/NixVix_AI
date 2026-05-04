@@ -13,47 +13,72 @@ const techData = [
 
 function TechCards() {
   return (
-    <div className="relative z-[1] mt-0 flex flex-col items-center justify-center w-full py-0 sm:py-0 md:py-10 lg:py-20 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.6)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px] rounded-full  overflow-hidden">
-      {/* Section Titles */}
-      <h3 className="subtitle">Tech Stack</h3>
-      <h2 className="heading2">
-        The Engine Behind Our AI
-      </h2>
+    <div className="relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full md:py-10 lg:py-20 bg-[radial-gradient(60%_60%_at_50%_50%,rgba(43,112,109,0.25)_0%,rgba(43,112,109,0.15)_40%,rgba(43,112,109,0)_80%)] backdrop-blur-[64px] overflow-hidden">
 
-      {/* Infinite Scrolling Container */}
-      <div className="relative w-full overflow-hidden ">
-        <div className="flex gap-2 sm:gap-2 md:gap-4 animate-scroll  items-start">
-          {[...techData, ...techData].map((item, index) => (
+      {/* Titles */}
+      <h3 className="subtitle">Tech Stack</h3>
+      <h2 className="heading2">The Engine Behind Our AI</h2>
+
+      <div className="relative w-full overflow-hidden">
+
+        {/* 📱 Mobile (NO SCROLL) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden mt-6 w-full">
+          {techData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col justify-start items-start bg-[#111] rounded-md        /* mobile */
-sm:rounded-lg     /* small screens */
-md:rounded-xl     /* tablets */
-lg:rounded-xl    /* large */
- w-[110px] sm:w-[110px] md:w-[150px] lg:w-[190px]  p-2 sm:p-2 md:p-4  sm:h-[150px]  md:h-[154px]   lg:h-[180px] sm:hover:h-[180px] md:hover:h-[200px] lg:hover:h-[230px]   cursor-pointer  transition-all duration-500 hover:bg-[linear-gradient(225.96deg,_#0C0C0C_-0.36%,_#224A51_181.51%)]
-              hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)] transform hover:-translate-y-1 group"
+              className="flex flex-col bg-[#111] rounded-lg p-4 min-h-[140px]"
             >
-              {/* Icon */}
-              <div className=" mb-2 sm:mb-4 md:mb-4 lg:mb-8">
-                <img
-                  src={item.icon}
-                  alt={item.title}
-                  className="w-[25px] sm:w-[35px] md:w-[40px] lg:w-[50px] h-[25px] sm:h-[35px] md:h-[50px] lg:h-[60px] object-contain"
-                />
-              </div>
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="w-[30px] h-[30px] object-contain mb-3"
+              />
 
-              {/* Title */}
-              <h3 className="text-white text-[12px] sm:text-[14px] md:text-[20px] font-semibold   mb-1">
+              <h3 className="text-white text-[14px] font-semibold mb-1">
                 {item.title}
               </h3>
 
-              {/* Description (Hidden until hover) */}
-              <p className="text-gray-400 text-[10px]  opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[100px] transition-all duration-500 ease-in-out">
+              <p className="text-gray-400 text-[12px] leading-snug">
                 {item.description}
               </p>
             </div>
           ))}
         </div>
+
+        {/* 💻 Desktop (SMOOTH SCROLL) */}
+        <div className="hidden md:block mt-10">
+          <div className="flex gap-4 w-max animate-scroll">
+            {[...techData, ...techData].map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col flex-shrink-0 bg-[#111] 
+                md:w-[150px] lg:w-[190px] 
+                md:p-4 md:h-[154px] lg:h-[180px]
+                md:hover:h-[200px] lg:hover:h-[230px]
+                rounded-xl
+                cursor-pointer transition-all duration-500
+                hover:bg-[linear-gradient(135deg,_#0C0C0C_0%,_#142326_100%)]
+                hover:shadow-[0_8px_25px_rgba(0,0,0,0.4)]
+                transform hover:-translate-y-1 group"
+              >
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className="md:w-[40px] lg:w-[50px] md:h-[50px] lg:h-[60px] object-contain mb-4"
+                />
+
+                <h3 className="md:text-[18px] lg:text-[20px] font-semibold mb-1">
+                  {item.title}
+                </h3>
+
+                <p className="text-gray-400 text-[10px] opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[100px] transition-all duration-500 ease-in-out">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );

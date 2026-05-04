@@ -79,7 +79,7 @@ function Contact({ alt }) {
                 color: "#27f0d5",
                 border: "1px solid rgba(39, 240, 213, 0.3)",
                 borderRadius: "12px",
-                zIndex:10
+                zIndex: 10
               },
             });
             setFormData({
@@ -98,12 +98,12 @@ function Contact({ alt }) {
               position: "top-right",
               autoClose: 3000,
               theme: "dark",
-               style: {
+              style: {
                 background: "linear-gradient(135deg, #0b1210, #051f18)",
                 color: "#27f0d5",
                 border: "1px solid rgba(39, 240, 213, 0.3)",
                 borderRadius: "12px",
-                  zIndex:10
+                zIndex: 10
               },
             });
           }
@@ -115,15 +115,13 @@ function Contact({ alt }) {
 
   return (
     <section className="contact-section">
-      <div className={alt ? "contact-box-alt" : "contact-box"}>
+      <div className={alt ? "contact-box-alt" : "contact-box px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-10"}>
         {alt ? (
           <>
             {/* Left Info */}
             <div className="contact-left">
-              <h2 className="heading1 " >
-                Contact
-              </h2>
-              <p>Let’s Build the Future of AI Together</p>
+              <h2 className="heading1" >Contact</h2>
+              <p className="pheading">Let’s Build the Future of AI Together</p>
 
               <div className="contact-info">
                 <div className="contact-item">
@@ -257,7 +255,7 @@ function Contact({ alt }) {
         ) : (
           <>
             <h2 className="heading2 text-left">Contact</h2>
-            <p>Let’s Build the Future of AI Together</p>
+            <p className="pheading">Let’s Build the Future of AI Together</p>
             <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
               <div className="form-left">
                 <div className="form-row">

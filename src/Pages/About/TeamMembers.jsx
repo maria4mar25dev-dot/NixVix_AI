@@ -92,10 +92,10 @@ function TeamMembers() {
             </div>
 
             {/* Text */}
-            <h3 className="mt-3  text-[16px] sm:text-[16px] md:text-[1.1rem] font-semibold text-[#EEF9F0]">
+            <h3 className="mt-3  text-[16px] sm:text-[16px] md:text-[1.1rem] lg:text-[28px] font-medium text-[#EEF9F0]">
               {member.name}
             </h3>
-            <p className="mt-1  text-[12px] sm:text-[14px] md:text-[0.9rem] text-[#348E77]">
+            <p className="mt-1  text-[12px] sm:text-[14px] md:text-[0.9rem] lg:text-[20px] font-semibold text-[#348E77]">
               {member.designation}
             </p>
           </div>

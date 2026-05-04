@@ -2,7 +2,7 @@ import React from 'react'
 import HomeHero from './HomeHero'
 import About from './About'
 import Impact from './Impact'
-// import Possibilities from './Possibilities'
+import Possibilities from './Possibilities'
 import TechCards from '../TechStack/TechCard'
 import VoiceTech from './VoiceTech'
 import Workflow from './WorkFlow/WorkFlow'
@@ -12,7 +12,7 @@ import Industries from './Industries'
 import Testimonial from '../../CommonComponents/Testimonial'
 import Partners from '../../CommonComponents/Partners'
 import Contact from '../../CommonComponents/Contact/Contact'
-import PossibleServices from './PossibleServices'
+// import PossibleServices from './PossibleServices'
 
 
 function Home() {
@@ -22,8 +22,8 @@ function Home() {
         <HomeHero/>
         <About/>
         <Impact/>
-        {/* <Possibilities/> */}
-        <PossibleServices/>
+        <Possibilities/>
+        {/* <PossibleServices/> */}
         <TechCards/>
         <VoiceTech/>
         <CaseStudyList caseData={caseData} showHeader={true} />

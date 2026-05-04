@@ -76,7 +76,6 @@
 
 .accordion-content {
   margin-top: 15px;
-  font-size: 0.9rem;
   line-height: 1.6;
   color: #ccc;
 }
@@ -102,10 +101,7 @@
     font-size: 1rem;
   }
 
-  .accordion-content {
-    font-size: 0.95rem;
-  }
-   .ourstory-bg-left,
+  .ourstory-bg-left,
   .ourstory-bg-right {
     width: 15%;
     opacity: 0.5;
@@ -129,11 +125,6 @@
     font-size: 16px;
   }
 
-  .accordion-content {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
   .icon {
     font-size: 1.3rem;
   }
@@ -153,10 +144,6 @@
   }
   .accordion-header h3 {
     font-size: 16px;
-  }
-
-  .accordion-content {
-    font-size: 12px;
   }
   .ourstory-container {
     gap: 15px;

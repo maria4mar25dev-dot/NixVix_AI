@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IMAGES } from "../../Images";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const industriesData = [
   {
     image: IMAGES.industryImg,
@@ -39,21 +40,9 @@ function Industries() {
 
   return (
     <div>
-          <div
-  className="
-    absolute
-    w-[80%]                
-    sm:w-[80%]
-    md:w-[100%]
-    lg:w-[902px]           
-    aspect-square
-    rounded-full
-    pointer-events-none
-    bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.4)_0%,rgba(43,112,109,0)_100%)]
-    left-0
-  "
-/>
-    <section className="relative text-center text-white px-2 md:px-6 py-2 sm:py-4 md:py-12 lg:py-14 overflow-hidden w-[93%] max-w-[1380px] mx-auto">
+  
+    <section className="relative text-center text-white  px-[20px] sm:px-[40px] md:px-[40px]   py-2 sm:py-4 md:py-18 lg:py-20  overflow-hidden  max-w-[1380px] mx-auto">
+   
       {/* Titles */}
       <h4 className="subtitle">Industries</h4>
       <h2 className="heading2 ">Where Our Solutions Make An Impact</h2>
@@ -65,22 +54,22 @@ function Industries() {
           <img
             src={currentIndustry.image}
             alt={currentIndustry.title}
-            className="w-full md:h-[450px] sm:h-[300px] h-[250] object-cover block"
+            className="w-full md:h-[450px] h-[250px] sm:h-[350px] object-cover block"
           />
           <div className="absolute bottom-0 left-0 w-full bg-[#171717]  backdrop-blur-[64px] text-left lg:p-6 md:p-4 sm:p-3 xs:p-2">
-            <h3 className="text-[16px] sm:text-[16px] md:text-lg font-semibold mb-1 px-1">
+            <h3 className="pheading font-semibold mb-1 px-1">
               {currentIndustry.title}
             </h3>
-            <p className="text-white/80 text-[12px] sm:text-[14px] md:text-sm leading-[1.4] px-1 mb-0 sm:mb-1 md:mb-2">
+            <p className=" ptext text-white/80 leading-[1.4] px-1 mb-0 sm:mb-1 md:mb-2">
               {currentIndustry.description}
             </p>
-            <span className="text-white/60 text-[10px] sm:text-xs md:text-[0.85rem] px-1 ">
+            <span className="text-white/60 text-[10px] sm:text-[11px] md:text-[12px] px-1 ">
               {currentIndustry.meta}
             </span>
           </div>
         </div>
         {/* Buttons Wrapper */}
-        <div className="flex justify-center items-center gap-2 my-2 md:mt-0 md:justify-between relative md:absolute md:top-1/2 md:left-0 md:w-full md:-translate-y-1/2">
+        <div className="flex justify-center items-center gap-2 my-2 mt-4 sm:mt-6 md:mt-0 md:justify-between relative md:absolute md:top-1/2 md:left-0 md:w-full md:-translate-y-1/2">
 
           {/* Left Button */}
           <button
@@ -90,11 +79,10 @@ function Industries() {
             flex items-center justify-center  
             md:absolute md:left-[-30px]"
           >
-          <img 
-    src={IMAGES.rightArrow} 
-    alt="Previous" 
-    className="w-4 h-4 sm:w-5 sm:h-5"
-  />
+          <FontAwesomeIcon
+          icon={faArrowLeft}
+          className="text-[#6AFFD9] text-sm "
+          />
           </button>
           {/* Right Button */}
           <button
@@ -104,11 +92,10 @@ function Industries() {
             flex items-center justify-center  
             md:absolute md:right-[-30px]" 
           >
-             <img 
-    src={IMAGES.leftArrow} 
-    alt="Next" 
-    className="w-4 h-4 sm:w-5 sm:h-5"
-  />
+          <FontAwesomeIcon
+          icon={faArrowRight}
+          className="text-[#6AFFD9] text-sm "
+          />
           </button>
         </div>
       </div>

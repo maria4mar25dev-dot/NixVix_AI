@@ -59,7 +59,7 @@ function Stories() {
                 </span>
               </div>
               {activeIndex === index && (
-                <p className="accordion-content">{story.desc}</p>
+                <p className="ptext accordion-content">{story.desc}</p>
               )}
             </div>
           ))}

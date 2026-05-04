@@ -40,8 +40,8 @@
 .mission-card {
   position: relative;
   z-index: 1;
-  width: 87%;
- background: rgba(0, 0, 0, 0.08); 
+  max-width: 1248px;
+  background: rgba(0, 0, 0, 0.08); 
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 40px rgba(0, 255, 170, 0.08);
   border-radius: 200px;
@@ -55,7 +55,6 @@
 
 /* Text */
 .mission-text {
-  font-size: 1.2rem;
   line-height: 1.8;
   color: #a9a9a9;
   max-width: 1000px;
@@ -80,10 +79,6 @@
     font-size: 2.2rem;
   }
 
-  .mission-text {
-    font-size: 1.1rem;
-  }
-
   .mission-bg-left,
   .mission-bg-right {
     width: 320px;
@@ -106,7 +101,6 @@
   }
 
   .mission-text {
-    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -132,10 +126,6 @@
 
   .mission-heading {
     font-size: 1.6rem;
-  }
-
-  .mission-text {
-    font-size: 14px;
   }
 
   .mission-bg-left,

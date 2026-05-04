@@ -6,16 +6,16 @@ function Partners() {
     <section
       className="
         bg-black border-y border-[#2B2B2B]
-        lg:py-8 md:py-6 sm:py-4 py-4 mb-14
+        lg:py-8 md:py-6 sm:py-4 py-4
         flex justify-center items-center overflow-hidden
-        lg:mx-[50px] sm:mx-[30px] xs:mx-[15px] my-[2rem] sm:my-[3rem] md:my-[6rem] lg:my-[9.5rem]   backdrop-blur-[64px]
+        lg:mx-[50px] sm:mx-[30px] xs:mx-[15px] my-12 sm:my-14 md:my-18 lg:my-20  backdrop-blur-[64px]
       "
     >
       <div
         className="
           flex justify-around sm:justify-between items-center flex-wrap
-        sm:gap-1 md:gap-10 lg:gap-12 
-          max-w-[1200px] w-full
+          sm:gap-1 md:gap-10 lg:gap-12 
+          max-w-[1200px] w-full px-[20px] sm:px-[40px] md:px-[40px]
         "
       >
         {/* Partner Logos */}

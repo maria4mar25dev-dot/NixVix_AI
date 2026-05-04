@@ -4,12 +4,16 @@ import { IMAGES } from '../../Images'
 function ServicesHero() {
   return (
     <div
-      className="hero-section"
-      style={{ backgroundImage: `url(${IMAGES.heroImg3})` }}
+      className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 md:px-10"
+      style={{
+        backgroundImage: `url(${IMAGES.heroImg3})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="overlay"></div>
-      <div className="relative z-20 flex flex-col items-center justify-center text-center">
-        <h1 className="heading1 ">Services</h1>
+      <div className="relative z-20 flex flex-col items-center justify-center text-center lg:mt-32">
+        <h1 className="heading1">Services</h1>
 
         <h1 className="sub-heading ">Redefine what's possible with AI</h1>
 

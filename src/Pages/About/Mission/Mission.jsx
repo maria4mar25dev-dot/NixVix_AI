@@ -9,7 +9,7 @@ function Mission() {
       <img src={IMAGES.bgLeft} alt="right bg" className="mission-bg-right" />
       <div className="mission-card">
         <h2 className="heading2 mb-2 sm:mb-4 md:mb-6">Our Mission</h2>
-        <p className="mission-text">
+        <p className="pheading mission-text">
           To redefine what's possible with AI by listening deeply, building fearlessly, 
           and scaling responsibly—making intelligence accessible, ethical, and impactful.
         </p>

@@ -1,6 +1,7 @@
 import React from "react";
-import { IMAGES } from "../../../Images";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
     const navigate = useNavigate();
 
@@ -13,11 +14,11 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
   return (
     <div className="text-white">
       {showHeader && (
-        <div className="w-[78%] mx-auto mb-8 flex items-center justify-between">
+        <div className="max-w-[1250px] mx-auto flex items-center px-[20px] sm:px-[40px] justify-between">
 
           {/* Left: Heading */}
           <div>
-            <h3 className="subtitle text-left">Work</h3>
+            <h3 className="subtitle text-left">Portfolio</h3>
             <h2 className="heading2">Case Studies</h2>
           </div>
 
@@ -26,21 +27,19 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
             <button
               className="bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center hover:bg-[#6AFFD9]/10 transition"
             >
-              <img
-                src={IMAGES.rightArrow}
-                alt="Previous"
-                className="w-4 h-4 sm:w-5 sm:h-5"
-              />
+              <FontAwesomeIcon
+                        icon={faArrowLeft}
+                        className="text-[#6AFFD9] text-sm "
+                        />
             </button>
 
             <button
               className=" bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center hover:bg-[#6AFFD9]/10 transition"
             >
-              <img
-                src={IMAGES.leftArrow}
-                alt="Next"
-                className="w-4 h-4 sm:w-5 sm:h-5"
-              />
+              <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="text-[#6AFFD9] text-sm "
+                        />
             </button>
           </div>
 
@@ -50,7 +49,7 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
 
       {/* Cards Section */}
 
-      <div className="flex flex-wrap justify-center gap-6 max-w-[1300px] mx-auto mb-6 sm:mb-10 md:my-12 ">
+      <div className="px-[20px] sm:px-[40px] grid grid-cols-1  sm:grid-cols-2  lg:grid-cols-3 gap-6  max-w-[1250px]  mx-auto mb-6 sm:mb-10 md:my-4  items-stretch">
         {caseData.map((item, i) => {
           const isActive = activeCase?.title === item.title;
           return (
@@ -64,7 +63,7 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
             >
               <div
                 onClick={() => handleClick(item)}
-                className={`w-[300px] sm:w-[360px] md:w-[380px] bg-[#080808] rounded-2xl overflow-hidden flex flex-col relative cursor-pointer transition-all duration-300 border border-transparent hover:shadow-[0_6px_20px_rgba(52,142,119,0.3)] ${
+                className={`w-full h-full bg-[#080808] rounded-2xl overflow-hidden flex flex-col relative cursor-pointer transition-all duration-300 border border-transparent hover:shadow-[0_6px_20px_rgba(52,142,119,0.3)] ${
                   isActive ? "border-[#27f0d5]" : ""
                 }`}
               >
@@ -72,32 +71,38 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-full h-[200px] object-cover rounded-t-2xl mb-2 sm:mb-3 md:mb-5"
+                  className="w-full h-[200px] object-cover rounded-t-2xl "
                 />
 
-                {/* Tags */}
-                <div className="flex  flex-wrap  gap-2  px-2 sm:px-3 md:px-4 mb-3">
-                  {item.tags.map((tag, j) => (
-                    <span
-                      key={j}
-                      className="bg-[#181818] font-normal text-[#E4E4E4]  text-[11px] sm:text-[13px] md:text-[15px]  px-1 sm:px-2 md:px-3 py-1 rounded-[8px]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+                 <div className="flex flex-col flex-grow px-2 sm:px-3 md:px-4 py-3">
 
-                {/* Title */}
-                <h3 className=" px-2 sm:px-3 md:px-4  text-[16px] sm:text-[16px] md:text-lg font-semibold text-white mb-1 leading-6">
-                  {item.title}
-                </h3>
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-3 min-h-[48px]">
+                    {item.tags.map((tag, j) => (
+                      <span
+                        key={j}
+                        className="btext bg-[#181818] text-[#E4E4E4] px-2 py-1 rounded-[8px]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
 
-                {/* Description */}
-                <p className=" px-2 sm:px-3 md:px-4 text-[12px] sm:text-[14px] md:text-[17px] text-[#C6C6C6] mb-4 sm:mb-4 md:mb-5 leading-relaxed">
-                  {item.outcome || item.desc}
-                </p>
-                <div className="px-4 sm:px-3 md:px-4 pb-4">
-                  <div className="h-[1px] w-full bg-[linear-gradient(90deg,rgba(43,112,109,0)_0%,#66DFD9_50%,rgba(43,112,109,0)_100%)]"></div>
+                  {/* Title */}
+                  <h3 className="ptext font-semibold text-white mb-2 leading-6">
+                    {item.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="btext text-[#C6C6C6] leading-relaxed">
+                    {item.outcome || item.desc}
+                  </p>
+
+                  {/* Bottom Divider */}
+                  <div className="mt-auto pt-4">
+                    <div className="h-[1px] w-full bg-[linear-gradient(90deg,rgba(43,112,109,0)_0%,#66DFD9_50%,rgba(43,112,109,0)_100%)]"></div>
+                  </div>
+
                 </div>
               </div></div>
           );

@@ -3,7 +3,7 @@ import { IMAGES } from "../../Images";
 
 function ServicesDetail() {
   return (
-    <div className=" relative z-[1] max-w-[1200px] mx-[15px] sm:mx-[20px] md:mx-[30px] lg:mx-[40px] xl:mx-auto -mt-[50px] sm:-mt-[25px] md:mt-0 my-10 p-4 sm:p-6 md:p-8 rounded-2xl border border-[#348E77] text-white bg-black/40 backdrop-blur-sm">
+    <div className=" relative z-[1] max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mt-0 mb-16 sm:mb-20 md:mb-32 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 rounded-2xl border border-[#348E77] text-white bg-black/40 backdrop-blur-sm">
 
       {/* Image Section */}
       <div className="rounded-2xl overflow-hidden border border-[#262626] mb-6">
@@ -15,14 +15,9 @@ function ServicesDetail() {
       </div>
 
       {/* Title */}
-      <h2 className="text-[16px] sm:text-[16px] md:text-xl lg:text-2xl font-semibold" style={{textAlign:"left"}}>
+      <h2 className="pheading font-bold mb-2 " style={{textAlign:"left"}}>
         Computer Vision
       </h2>
-
-      {/* Subtitle */}
-      <p className="text-sm sm:text-base md:text-lg text-gray-400 my-2">
-        Innovate with intelligence that creates.
-      </p>
 
       {/* Tags Section */}
       <div className="flex flex-wrap gap-3 mb-6">
@@ -39,10 +34,10 @@ function ServicesDetail() {
 
       {/* Description Section */}
       <div className="bg-[#0F0F0F]/90 border border-[#194439] rounded-xl p-4 sm:p-6 md:p-8">
-        <h3 className="font-semibold text-base sm:text-lg md:text-xl mb-3 text-white">
+        <h3 className="font-normal lg:text[20px] mb-3 text-white">
           Solution Description
         </h3>
-        <p className="text-gray-300 text-[14px] sm:text-[16px] md:text-[18px] leading-relaxed">
+        <p className="ptext text-gray-300 leading-relaxed">
          We can examine and interpret your visual content (social media images, headshots & CCTV streams etc.) through intelligent machines powered by cutting edge deep learning architectures. We can assist you in the domains like:
         </p>
       </div>

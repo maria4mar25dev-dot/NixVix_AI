@@ -8,7 +8,7 @@ export const caseData = [
       challenge:
         "Enable real-time identification and tracking of players in aerial match footage to support performance analytics for soccer clubs.",
       solution:
-        "We developed a deep learning pipeline using Faster-RCNN and ResNet50 that can detect and assign player IDs across the entire video.",
+        "We developed a deep learning pipeline using Faster-RCNN and ResNet50 that can detect and  assign player IDs across the entire video. Tracked positions are passed to a custom  visualization engine for real-time sprite mapping.",
       tech: ["Python", "OpenCV", "TensorFlow", "Drone Video Feed"],
       outcome:
         "Outcome: Reduced manual annotation time by 90% and provided clubs with accurate player heatmaps.",

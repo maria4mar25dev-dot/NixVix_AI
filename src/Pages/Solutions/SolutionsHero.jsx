@@ -4,30 +4,35 @@ import { IMAGES } from '../../Images'
 function SolutionsHero() {
   return (
     <div
-      className="hero-section"
-      style={{ backgroundImage: `url(${IMAGES.heroImg5})` }}
+      className="relative w-full min-h-screen flex items-center justify-center text-center px-4 sm:px-6 md:px-10"
+      style={{
+        backgroundImage: `url(${IMAGES.heroImg5})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
+
       <div className="overlay"></div>
-      <div className="relative z-20 flex flex-col items-center justify-center text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center lg:mt-32">
         <h1 className="heading1">AI Solutions</h1>
         <h1 className="sub-heading">Solutions we Deliver</h1>
         {/* Button Container */}
-       <div className="flex flex-wrap justify-center  gap-2 sm:gap-4 md:gap-6 mt-2 sm:mt-4 md:mt-6 max-w-[1200px]  ">
-  {/* Top Row (3 buttons) */}
-  <div className="flex justify-center flex-wrap gap-4 sm:gap-6 w-full md:w-auto  ">
-    <Button label="Pose Estimation" />
-    <Button label="Computer Vision" />
-    <Button label="Voice Tech" />
-  </div>
+        <div className="flex flex-wrap justify-center  gap-2 sm:gap-4 md:gap-6 mt-2 sm:mt-4 md:mt-6 max-w-[1200px]  ">
+          {/* Top Row (3 buttons) */}
+          <div className="flex justify-center flex-wrap gap-4 sm:gap-6 w-full md:w-auto  ">
+            <Button label="Pose Estimation" />
+            <Button label="Computer Vision" />
+            <Button label="Voice Tech" />
+          </div>
 
-  {/* Bottom Row (4 buttons) */}
-  <div className="flex justify-center flex-wrap gap-4 sm:gap-6 w-full md:w-auto">
-    <Button label="AI Video Gen" />
-    <Button label="Conversation AI" />
-    <Button label="AI Understanding" />
-    <Button label="Agent Workflows" />
-  </div>
-</div>
+          {/* Bottom Row (4 buttons) */}
+          <div className="flex justify-center flex-wrap gap-4 sm:gap-6 w-full md:w-auto">
+            <Button label="AI Video Gen" />
+            <Button label="Conversation AI" />
+            <Button label="AI Understanding" />
+            <Button label="Agent Workflows" />
+          </div>
+        </div>
 
       </div>
     </div>
@@ -42,8 +47,8 @@ function Button({ label }) {
       className="
         bg-black 
         text-white 
-         px-2.5 sm:px-4 md:px-6 
-         py-1.5 sm:py-2 md:py-3  
+        px-2.5 sm:px-4 md:px-6 
+        py-1.5 sm:py-2 md:py-3  
         rounded-full 
         text-xs sm:text-sm md:text-base lg:text-lg 
         font-medium 

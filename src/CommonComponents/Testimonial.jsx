@@ -29,7 +29,7 @@ function Testimonial() {
     setCurrent((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
-  const { text, name, image, meta } = testimonials[current];
+  const { text, name, image } = testimonials[current];
 
   return (
     <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16 my-8 sm:my-10 md:my-10">

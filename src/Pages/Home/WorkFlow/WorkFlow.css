@@ -6,7 +6,7 @@
 
 .workflow-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 0px 20px;
   color: #FFFFFF;
 }
 
@@ -96,7 +96,7 @@
 
 @media (max-width: 1214px) {
   .workflow-section {
-    padding: 40px 15px;
+    padding: 0px 15px;
   }
 
   .workflow-steps {
@@ -150,9 +150,7 @@
 }
 
 @media (max-width: 768px) {
- .workflow-section{
-  padding: 40px 0px 0px 0px;
- }
+ 
   .workflow-item {
     width: 100%;
     margin-bottom: 50px;
@@ -180,9 +178,7 @@
   .workflow-item::after {
     display: none !important;
   }
-  .outer-container{
-    padding: 40px 0px;
-  }
+ 
 }
 
 @media (max-width: 480px) {
@@ -217,8 +213,5 @@
 
   .workflow-text {
     line-height: 1.4;
-  }
-  .outer-container{
-    padding: 20px 0px;
   }
 }

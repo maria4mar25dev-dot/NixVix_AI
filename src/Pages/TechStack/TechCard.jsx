@@ -11,9 +11,13 @@ const techData = [
   { icon: IMAGES.techcardLogo7, title: "Databases", description: "Pinecone, Weaviate, Chroma, Qdrant, PgVector, Milvus, Redis, Vespa" },
 ];
 
-function TechCards() {
+function TechCards({home}) {
   return (
-    <div className="relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full md:py-10 lg:py-20 bg-[radial-gradient(60%_60%_at_50%_50%,rgba(43,112,109,0.25)_0%,rgba(43,112,109,0.15)_40%,rgba(43,112,109,0)_80%)] backdrop-blur-[64px] overflow-hidden">
+    <div className={`relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full ${
+    home
+      ? "pt-16 sm:pt-16 md:pt-24 lg:pt-28"
+      : "pt-0"
+      } bg-[radial-gradient(60%_60%_at_50%_50%,rgba(43,112,109,0.25)_0%,rgba(43,112,109,0.15)_40%,rgba(43,112,109,0)_80%)] backdrop-blur-[64px] overflow-hidden`}>
 
       {/* Titles */}
       <h3 className="subtitle">Tech Stack</h3>

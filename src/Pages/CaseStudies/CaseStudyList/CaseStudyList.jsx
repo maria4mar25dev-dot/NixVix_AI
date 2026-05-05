@@ -14,7 +14,7 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
   return (
     <div className="text-white">
       {showHeader && (
-        <div className="max-w-[1250px] mx-auto flex items-center px-[20px] sm:px-[40px] justify-between">
+        <div className="max-w-[1250px] mx-auto flex items-center px-[20px] sm:px-[40px] justify-between  mt-16 sm:mt-16 md:mt-24 lg:mt-28">
 
           {/* Left: Heading */}
           <div>

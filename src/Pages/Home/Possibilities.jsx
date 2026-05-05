@@ -37,7 +37,7 @@ const services = [
 
 function Possibilities() {
   return (
-    <div className="max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mb-20">
+    <div className="max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mt-16 sm:mt-16 md:mt-24 lg:mt-28">
 
       {/* Top Section */}
       <div className="flex items-center justify-between flex-wrap  mb-8">

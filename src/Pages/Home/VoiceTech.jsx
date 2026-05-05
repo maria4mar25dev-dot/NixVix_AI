@@ -4,7 +4,7 @@ import { IMAGES } from "../../Images";
 
 function VoiceTech() {
   return (
-    <div className="flex flex-col items-center justify-center text-center px-[20px] sm:px-[40px] md:px-[40px] my-4 sm:my-6 md:my-14 lg:my-20">
+    <div className="flex flex-col items-center justify-center text-center px-[20px] sm:px-[40px] md:px-[40px] mt-16 sm:mt-16 md:mt-24 lg:mt-28">
       <h3 className="subtitle">AI Solutions</h3>
       <h2 className="heading2">
         Solutions We Deliver
@@ -28,11 +28,11 @@ function VoiceTech() {
              sm:h-[400px] 
              md:h-[550px] 
              lg:h-[660px]
-             rounded-[20px] sm:rounded-[28px] md:rounded-[40px] lg:rounded-[60px]
+             rounded-[10px] sm:rounded-[25px] md:rounded-[40px] lg:rounded-[60px]
              border border-[#1F805399]
              shadow-[0_0_20px_rgba(31,128,83,0.2)]
              bg-cover bg-center bg-no-repeat
-             transition-all duration-300 ease-in-out mb-6 sm:mb-10 md:mb-20"
+             transition-all duration-300 ease-in-out"
         style={{
           backgroundImage: `url(${IMAGES.voiceTechImg})`,
         }}

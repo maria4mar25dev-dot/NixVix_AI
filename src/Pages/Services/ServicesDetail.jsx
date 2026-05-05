@@ -3,7 +3,7 @@ import { IMAGES } from "../../Images";
 
 function ServicesDetail() {
   return (
-    <div className="relative z-[1] max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mt-0 mb-6 sm:mb-8 md:mb-20 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 rounded-[20px] border border-[#348E77] text-white bg-[#000000]/30 backdrop-blur-sm">
+    <div className="relative z-[1] max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto my-16 sm:my-16 md:my-24 lg:my-28 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 rounded-[20px] border border-[#348E77] text-white bg-[#000000]/30 backdrop-blur-sm">
       
       {/* Title + Subtitle */}
       <div className="mb-6 sm:mb-8">

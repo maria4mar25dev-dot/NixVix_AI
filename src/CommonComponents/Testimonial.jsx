@@ -32,7 +32,7 @@ function Testimonial() {
   const { text, name, image } = testimonials[current];
 
   return (
-    <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16 my-8 sm:my-10 md:my-10">
+    <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16  mt-16 sm:mt-16 md:mt-24 lg:mt-28">
       {/* Title */}
       <h3 className="subtitle">Clients</h3>
       <h2 className="heading2">Testimonials</h2>

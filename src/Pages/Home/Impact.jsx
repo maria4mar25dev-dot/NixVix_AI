@@ -4,7 +4,7 @@ import { IMAGES } from "../../Images";
 function Impact({ solution = false }) {
   return (
 
-    <section className={`relative w-full overflow-hidden text-white px-[20px] sm:px-[40px]  ${solution ? "py-8 md:py-12" : "py-16 md:py-18"}`}>
+    <section className={`relative w-full overflow-hidden text-white px-[20px] sm:px-[40px]  ${solution ? "py-16 sm:py-16 md:py-24 lg:pt-28" : "pt-16 sm:pt-16 md:pt-24 lg:pt-28"}`}>
 
       {/* LEFT GLOW */}
       <div className={`absolute left-[-5%] top-[30%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-30 blur-[100px] rounded-full z-[1]`} />
@@ -17,7 +17,7 @@ function Impact({ solution = false }) {
         src={IMAGES.bgElement2}
         className={`absolute  left-1/2  -translate-x-1/2  ${solution
           ? "top-[70%] -translate-y-1/2"
-          : "top-[40%] -translate-y-1/2"
+          : "top-[45%] -translate-y-1/2"
           } opacity-40 blur-[1px] w-[80%] max-w-[900px] z-0`}
         alt=""
       />
@@ -27,7 +27,7 @@ function Impact({ solution = false }) {
         src={IMAGES.bgElement3}
         className={`absolute  ${solution
          ? "left-[15%] top-[90%] -translate-y-1/2"
-         : "left-[15%] top-[60%] -translate-y-1/2"
+         : "left-[15%] top-[65%] -translate-y-1/2"
           } w-[120px] md:w-[180px] opacity-80 blur-[1px] z-0`}
         alt=""
       />
@@ -88,7 +88,7 @@ function Impact({ solution = false }) {
 function VisionMission() {
   return (
 
-    <div className="relative z-[10] mt-16 md:mt-24 lg:mt-32 max-w-[1168px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center md:text-left lg:text-left mb-28">
+    <div className="relative z-[10] mt-12 md:mt-24 lg:mt-32 max-w-[1168px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center md:text-left lg:text-left">
 
       <div>
         <h3 className="pheading font-bold mb-2">

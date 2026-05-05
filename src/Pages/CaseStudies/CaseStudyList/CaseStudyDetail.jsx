@@ -4,7 +4,7 @@ function CaseStudyDetail({ activeCase }) {
   if (!activeCase) return null;
 
   return (
-    <div className="relative z-[1] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mt-0 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 mt-0 bg-[#0d0f10] text-white rounded-[20px] border border-[#348E77] shadow-[0_8px_24px_rgba(0,0,0,0.5)] 
+    <div className="relative z-[1] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto  px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 bg-[#0d0f10] text-white rounded-[20px] border border-[#348E77] shadow-[0_8px_24px_rgba(0,0,0,0.5)] 
       max-w-[1200px]  mb-[50px] sm:mb-[100px] md:mb-[200px] font-inter">
 
       {/* Title */}

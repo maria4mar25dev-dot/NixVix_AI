@@ -41,7 +41,7 @@ function Industries() {
   return (
     <div>
   
-    <section className="relative text-center text-white  px-[20px] sm:px-[40px] md:px-[40px]   py-2 sm:py-4 md:py-18 lg:py-20  overflow-hidden  max-w-[1380px] mx-auto">
+    <section className="relative text-center text-white  px-[20px] sm:px-[40px] md:px-[40px]    mt-16 sm:mt-16 md:mt-24 lg:mt-28 overflow-hidden  max-w-[1380px] mx-auto">
    
       {/* Titles */}
       <h4 className="subtitle">Industries</h4>

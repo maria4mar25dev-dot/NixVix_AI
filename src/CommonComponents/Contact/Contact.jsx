@@ -9,7 +9,7 @@ const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
 const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 
-function Contact({ alt }) {
+function Contact({ alt, home }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -115,11 +115,22 @@ function Contact({ alt }) {
 
   return (
     <section className="contact-section">
-      <div className={alt ? "contact-box-alt" : "contact-box px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-10"}>
+      {/* <div className={alt ? "contact-box-alt" : "contact-box px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-10 mb-16 sm:mb-16 md:mb-24 lg:mb-28"}> */}
+            <div
+  className={
+    alt
+      ? "contact-box-alt"
+      : `contact-box px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-10 ${
+          home
+            ? "mb-16 sm:mb-16 md:mb-24 lg:mb-28"
+            : "my-16 sm:my-16 md:my-24 lg:my-28"
+        }`
+  }
+>
         {alt ? (
           <>
             {/* Left Info */}
-            <div className="contact-left">
+            <div className="contact-left mt-16 sm:mt-16 md:mt-16">
               <h2 className="heading1" >Contact</h2>
               <p className="pheading">Let’s Build the Future of AI Together</p>
 
@@ -140,7 +151,7 @@ function Contact({ alt }) {
             </div>
 
             {/* Right Form */}
-            <div className="contact-right">
+            <div className="contact-right mb-16 sm:mb-16 md:mb-24 lg:mb-28">
               <form ref={formRef} className="contact-form-alt" onSubmit={handleSubmit}>
                 <div className="form-row">
                   <div className="input-group">

@@ -64,7 +64,7 @@ const techData = [
 
 function Expertise() {
   return (
-    <div className="relative max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mb-6 md:mb-8  py-10">
+    <div className="relative max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto pt-16 sm:pt-16 md:pt-24 lg:pt-28">
       {/* Glowing radial background */}
       <div className="absolute  inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.3)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px] rounded-full"></div>
 

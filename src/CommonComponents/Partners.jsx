@@ -8,7 +8,7 @@ function Partners() {
         bg-black border-y border-[#2B2B2B]
         lg:py-8 md:py-6 sm:py-4 py-4
         flex justify-center items-center overflow-hidden
-        lg:mx-[50px] sm:mx-[30px] xs:mx-[15px] my-12 sm:my-14 md:my-18 lg:my-20  backdrop-blur-[64px]
+        lg:mx-[50px] sm:mx-[30px] xs:mx-[15px]  mt-16 sm:mt-16 md:mt-24 lg:mt-28 backdrop-blur-[64px]
       "
     >
       <div

@@ -79,7 +79,7 @@ function HomeHero() {
 
       </div>
       {/* Arrow at bottom */}
-      <div className="absolute bottom-6 sm:-bottom-6 md:-bottom-10 lg:-bottom-14 left-1/2 -translate-x-1/2 z-[4]">
+      <div className="absolute bottom-6 sm:-bottom-6 md:-bottom-10 lg:-bottom-24 left-1/2 -translate-x-1/2 z-[4]">
         <img
           src={IMAGES.arrow2}
           alt="arrow"

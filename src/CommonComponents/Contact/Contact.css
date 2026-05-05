@@ -2,8 +2,6 @@
   padding: 0 40px;
   display: flex;
   justify-content: center;
-  margin: 20vh 0vh;
- 
 }
 
 .contact-box {
@@ -180,9 +178,6 @@ textarea {
 
 /* Tablets (<= 1024px) */
 @media (max-width: 1024px) {
-  .contact-section{
-     margin: 15vh 0vh;
-  }
   .contact-box {
     border-radius: 30px;
   }
@@ -202,10 +197,7 @@ textarea {
 
 /* Mobile (<= 768px) */
 @media (max-width: 768px) {
-   .contact-section{
-     margin: 10vh 0vh;
-     
-  }
+
   .contact-form {
     flex-direction: column; 
   }

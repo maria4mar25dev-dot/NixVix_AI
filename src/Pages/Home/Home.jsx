@@ -24,14 +24,14 @@ function Home() {
         <Impact/>
         <Possibilities/>
         {/* <PossibleServices/> */}
-        <TechCards/>
+        <TechCards home={true} />
         <VoiceTech/>
         <CaseStudyList caseData={caseData} showHeader={true} />
         <Industries/>
         <Partners/>
         <Testimonial/>
         <Workflow/>
-        <Contact/>
+        <Contact home={true}/>
         
     </div>
   )

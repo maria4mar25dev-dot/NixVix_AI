@@ -8,7 +8,7 @@ function About() {
   return (
     <section
       id="about-section"
-      className="px-[20px] sm:px-[40px] lg:px-16 pt-0 sm:pt-16 md:pt-24 lg:pt-28 bg-transparent"
+      className="px-[20px] sm:px-[40px] lg:px-16 pt-0 sm:pt-20 md:pt-28 lg:pt-32 bg-transparent"
     >
       {/* CONTENT */}
       <div className="max-w-[1150px] mx-auto text-left">
@@ -35,7 +35,7 @@ function About() {
 
 
           <Link to="/contact-us">
-            <button className="btext group flex items-center justify-center gap-[10px] px-6 py-3 rounded-full font-semibold border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
+            <button className="btext group flex items-center justify-center gap-[10px] px-6 py-3 rounded-full font-semibold border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:border-2 hover:border-[#51CBC6]">
               Start a Project  <span
                 className="
                 inline-flex

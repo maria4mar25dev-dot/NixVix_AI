@@ -56,8 +56,9 @@ body {
 @layer components {
   .heading1 {
     @apply font-inter font-bold text-white mb-4 tracking-normal    
-    text-[30px] sm:text-[36px] md:text-[44px] lg:text-[70px]
-          leading-[1.1] md:leading-[1.2] lg:leading-[1.25]
+          /*text-[35px] sm:text-[45px] md:text-[55px] lg:text-[77px] */
+          text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4rem]
+          leading-[1.2] sm:leading-[1.15] md:leading-[1.12] lg:leading-[1.1]
 
   }
   .sub-heading {

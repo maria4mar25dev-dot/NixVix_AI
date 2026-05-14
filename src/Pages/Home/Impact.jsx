@@ -4,20 +4,20 @@ import { IMAGES } from "../../Images";
 function Impact({ solution = false }) {
   return (
 
-    <section className={`relative w-full overflow-hidden text-white px-[20px] sm:px-[40px]  ${solution ? "py-16 sm:py-16 md:py-24 lg:pt-28" : "pt-16 sm:pt-16 md:pt-24 lg:pt-28"}`}>
+    <section className={`relative w-full overflow-hidden  text-white px-[20px] sm:px-[40px]  ${solution ? "pt-20 sm:pt-20 md:pt-28 lg:pt-32 pb-10 sm:pb-10 md:pb-14 lg:pb-16" : "pt-20 sm:pt-20 md:pt-28 lg:pt-32"}`}>
 
       {/* LEFT GLOW */}
-      <div className={`absolute left-[-5%] top-[30%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-30 blur-[100px] rounded-full z-[1]`} />
+      <div className={`absolute left-[-5%] top-[25%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
 
       {/* RIGHT GLOW */}
-      <div className={`absolute right-[-5%] top-[40%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-30 blur-[100px] rounded-full z-[1]`} />
+      <div className={`absolute right-[-5%] top-[40%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
 
       {/* CENTER BACKGROUND SHAPE */}
       <img
         src={IMAGES.bgElement2}
         className={`absolute  left-1/2  -translate-x-1/2  ${solution
           ? "top-[70%] -translate-y-1/2"
-          : "top-[45%] -translate-y-1/2"
+          : "top-[50%] -translate-y-1/2"
           } opacity-40 blur-[1px] w-[80%] max-w-[900px] z-0`}
         alt=""
       />
@@ -27,7 +27,7 @@ function Impact({ solution = false }) {
         src={IMAGES.bgElement3}
         className={`absolute  ${solution
          ? "left-[15%] top-[90%] -translate-y-1/2"
-         : "left-[15%] top-[65%] -translate-y-1/2"
+         : "left-[15%] top-[70%] -translate-y-1/2"
           } w-[120px] md:w-[180px] opacity-80 blur-[1px] z-0`}
         alt=""
       />
@@ -47,7 +47,7 @@ function Impact({ solution = false }) {
 
         {/* HEADING */}
         <h2 className="heading2 mb-10 md:mb-16">
-          The Nixvix Impact
+          The NixVix Impact
         </h2>
 
         {/* GLASS STATS CARD */}
@@ -55,8 +55,8 @@ function Impact({ solution = false }) {
         <div className="
              max-w-[1248px] mx-auto
              backdrop-blur-[2px] bg-white/5 border border-[#1C1C1C]
-             rounded-[30px] md:rounded-[150px] lg:rounded-[150px]
-             py-6 sm:py-8 md:py-12
+             rounded-lg md:rounded-[150px] lg:rounded-[150px]
+             py-6 sm:py-8 md:py-12 lg:py-14
              grid grid-cols-2 md:grid-cols-4
              gap-6 md:gap-0
              text-center
@@ -71,7 +71,7 @@ function Impact({ solution = false }) {
               <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[35px] xl:text-[35px] font-bold mb-2">
                 {stat.value}
               </h3>
-              <p className="ptext text-gray-300  leading-snug whitespace-pre-line">
+              <p className="ptext text-[#A9A9A9]  leading-snug whitespace-pre-line">
                 {stat.text}
               </p>
             </div>
@@ -88,7 +88,7 @@ function Impact({ solution = false }) {
 function VisionMission() {
   return (
 
-    <div className="relative z-[10] mt-12 md:mt-24 lg:mt-32 max-w-[1168px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center md:text-left lg:text-left">
+    <div className="relative z-[10] mt-12 md:mt-24 lg:mt-32 max-w-[1168px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-left">
 
       <div>
         <h3 className="pheading font-bold mb-2">

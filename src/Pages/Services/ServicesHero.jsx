@@ -39,17 +39,19 @@ function Button({ label }) {
       className="
         bg-black 
         text-white 
-         px-2.5 sm:px-4 md:px-6 
-         py-1.5 sm:py-2 md:py-3  
+        px-2.5 sm:px-4 md:px-6 
+        py-1.5 sm:py-2 md:py-3  
         rounded-full 
         text-xs sm:text-sm md:text-base lg:text-lg 
         font-medium 
         cursor-pointer 
-        transition-all duration-300 
+        transition-all duration-300 ease-in-out
+        hover:-translate-y-[2px] 
         shadow-[0px_0px_11.44px_1.62px_#2B6D6B]
         border-[1.22px] border-transparent
-        hover:border-[#419491]
+        hover:border-[#419491] 
         hover:shadow-[0px_0px_11.44px_1.62px_#5CE5E0]
+        hover:bg-[#0D1F1F]
       "
     >
       {label}

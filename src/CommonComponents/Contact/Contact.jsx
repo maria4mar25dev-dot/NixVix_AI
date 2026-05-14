@@ -122,8 +122,8 @@ function Contact({ alt, home }) {
       ? "contact-box-alt"
       : `contact-box px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-10 ${
           home
-            ? "mb-16 sm:mb-16 md:mb-24 lg:mb-28"
-            : "my-16 sm:my-16 md:my-24 lg:my-28"
+            ? "mb-20 sm:mb-20 md:mb-28 lg:mb-32"
+            : "my-20 sm:my-20 md:my-28 lg:my-32"
         }`
   }
 >

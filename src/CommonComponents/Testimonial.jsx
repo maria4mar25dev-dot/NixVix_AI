@@ -6,7 +6,7 @@ import { IMAGES } from "../Images";
 const testimonials = [
   {
     id: 1,
-    text: "Ahmer and the Team NixensEV exceeded all expectations, completing this  project. The team is extremely knowledgeable about Machine Learning,  Servers, Google Cloud, Python, and went above and beyond to make this  project successful. They helped set up the required environment and  implemented a solution that is easy to understand and very flexible.  Throughout the project, the communication was excellent; whenever  needed, Ahmer would offer a meeting to explain things in more detail.",
+    text: "Ahmer and the Team Nixense exceeded all expectations, completing this  project. The team is extremely knowledgeable about Machine Learning,  Servers, Google Cloud, Python, and went above and beyond to make this  project successful. They helped set up the required environment and  implemented a solution that is easy to understand and very flexible.  Throughout the project, the communication was excellent; whenever  needed, Ahmer would offer a meeting to explain things in more detail.",
     name: "DENNIS WANGERIN",
     image: IMAGES.testimonialImg1,
   },
@@ -32,13 +32,13 @@ function Testimonial() {
   const { text, name, image } = testimonials[current];
 
   return (
-    <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16  mt-16 sm:mt-16 md:mt-24 lg:mt-28">
+    <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16  mt-20 sm:mt-20 md:mt-28 lg:mt-32">
       {/* Title */}
       <h3 className="subtitle">Clients</h3>
       <h2 className="heading2">Testimonials</h2>
 
       <div
-        className="relative mx-auto max-w-[1090px] overflow-hidden p-[10px] sm:p-[14px] md:p-[18px] lg:p-[22px] rounded-[24px] sm:rounded-[32px] md:rounded-[40px] lg:rounded-[46px]"
+        className="relative mx-auto max-w-[1090px] overflow-hidden p-[0px] sm:p-[0px] md:p-[18px] lg:p-[22px] rounded-[24px] sm:rounded-[32px] md:rounded-[40px] lg:rounded-[46px]"
       >
 
         {/* BORDER */}

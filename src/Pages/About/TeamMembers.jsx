@@ -33,7 +33,7 @@ function TeamMembers() {
     <section
       className="
         text-center text-white bg-black
-        px-6 sm:px-10 md:mt-14 sm:mt-6 mt-6
+        px-6 
       "
     >
       {/* Subtitle */}
@@ -51,7 +51,7 @@ function TeamMembers() {
         className="
           flex flex-wrap justify-center
           gap-x-20 gap-y-12
-          max-w-[1100px] mx-auto
+          max-w-[1128px] mx-auto 
         "
       >
         {teamMembers.map((member, index) => (
@@ -59,7 +59,7 @@ function TeamMembers() {
             key={index}
             className="
               bg-white/5 rounded-lg overflow-hidden text-center
-              w-[280px] relative pb-6
+              w-[296px] relative pb-6
               transition-all duration-300 ease-in-out
                hover:shadow-[0_4px_20px_rgba(0,255,200,0.1)]
               sm:w-[240px] md:w-[260px] lg:w-[280px]

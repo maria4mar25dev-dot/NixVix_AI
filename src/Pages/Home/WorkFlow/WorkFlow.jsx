@@ -13,7 +13,7 @@ function Workflow() {
   ];
 
   return (
-    <div className="outer-container py-8 sm:py-8 md:py-12 lg:py-14 my-8 sm:my-8 md:my-12 lg:my-14"
+    <div className="outer-container py-10 sm:py-10 md:py-14 lg:py-16 my-10 sm:my-10 md:my-14 lg:my-16"
     
     style={{
     backgroundImage: `url(${IMAGES.workflowbg})`,

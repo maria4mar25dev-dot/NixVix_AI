@@ -10,7 +10,7 @@ function TechStackHero() {
         backgroundPosition: "center", }}
     >
       <div className="overlay"></div>
-      <div className="relative z-[20] flex flex-col items-center justify-center text-center  lg:mt-32">
+      <div className="relative z-[20] flex flex-col items-center justify-center text-center ">
         <h1 className="heading1">Tech Stack</h1>
         <h1 className="sub-heading mb-2">The Engine Behind Our AI</h1>
       </div>

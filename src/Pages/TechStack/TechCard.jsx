@@ -11,12 +11,11 @@ const techData = [
   { icon: IMAGES.techcardLogo7, title: "Databases", description: "Pinecone, Weaviate, Chroma, Qdrant, PgVector, Milvus, Redis, Vespa" },
 ];
 
-function TechCards({home}) {
+function TechCards({ home }) {
   return (
-    <div className={`relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full ${
-    home
-      ? "pt-16 sm:pt-16 md:pt-24 lg:pt-28"
-      : "pt-0"
+    <div className={`relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full ${home
+        ? "pt-20 sm:pt-20 md:pt-28 lg:pt-32"
+        : "pt-0"
       } bg-[radial-gradient(60%_60%_at_50%_50%,rgba(43,112,109,0.25)_0%,rgba(43,112,109,0.15)_40%,rgba(43,112,109,0)_80%)] backdrop-blur-[64px] overflow-hidden`}>
 
       {/* Titles */}
@@ -30,7 +29,9 @@ function TechCards({home}) {
           {techData.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col bg-[#111] rounded-lg p-4 min-h-[140px]"
+              className="flex flex-col bg-white/[0.04]
+                         border border-white/10
+                         backdrop-blur-[64px] rounded-lg p-4 min-h-[140px]"
             >
               <img
                 src={item.icon}
@@ -68,10 +69,10 @@ function TechCards({home}) {
                 <img
                   src={item.icon}
                   alt={item.title}
-                  className="md:w-[40px] lg:w-[50px] md:h-[50px] lg:h-[60px] object-contain mb-4"
+                  className="w-[50px] aspect-[4/3] object-contain mb-4"
                 />
 
-                <h3 className="md:text-[18px] lg:text-[20px] font-semibold mb-1">
+                <h3 className="md:text-[18px] lg:text-[20px] font-semibold mb-1 md:mt-2 lg:mt-6">
                   {item.title}
                 </h3>
 

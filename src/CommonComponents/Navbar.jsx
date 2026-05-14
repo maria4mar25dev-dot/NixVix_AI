@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IMAGES } from "../Images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,7 +6,26 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  // inside component
+const menuRef = useRef();
   const toggleMenu = () => setIsOpen(!isOpen);
+  // add this useEffect
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target)
+    ) {
+      setIsOpen(false);
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
 
   const navLinks = [
     { path: "/", name: "Home" },
@@ -17,7 +36,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#040B0B] border-b border-[#212423] shadow-[0_1px_6px_rgba(0,0,0,0.4)] z-50">
+    <header className="fixed top-0 left-0 w-full border-b border-white/10   shadow-[0_8px_40px_rgba(0,0,0,0.4)] z-50 bg-black/60 backdrop-blur-xl">
       <div className="flex items-center justify-between max-w-[1200px] mx-auto px-6 py-3">
 
         {/* Logo */}
@@ -25,11 +44,13 @@ export default function Navbar() {
           <img
             src={IMAGES.logo}
             alt="Logo"
-            className=" w-[50px] h-[40px]          /* Base: Mobile */
-            sm:w-[60px] sm:h-[50px]    /* Small screens ≥ 640px */
-            md:w-[70px] md:h-[60px]    /* Medium screens ≥ 768px */
-            lg:w-[85px] lg:h-[75px]   /* Large screens ≥ 1024px */
-            xl:w-[85px] xl:h-[75px] object-contain"
+            className=" w-[50px]  
+            sm:w-[60px]  
+            md:w-[70px]   
+            lg:w-[85px]  
+            xl:w-[85px] aspect-[4/3]  object-contain brightness-125
+
+"
           />
         </div>
 
@@ -68,7 +89,7 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Dropdown */}
-      <div
+      <div   ref={menuRef}
         className={`absolute right-6 top-[70px] w-[230px] bg-[#111]/90 backdrop-blur-xl rounded-lg overflow-hidden flex flex-col transition-all duration-300 ${isOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-3"
           }`}
       >

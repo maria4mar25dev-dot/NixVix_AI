@@ -25,7 +25,7 @@ function Stories() {
   };
 
   return (
-    <section className="ourstory-section">
+    <section className="ourstory-section my-20 sm:my-20 md:my-28 lg:my-32">
       <img src={IMAGES.bgRight} alt="left decoration" className="ourstory-bg-left" />
       <img src={IMAGES.bgLeft} alt="right decoration" className="ourstory-bg-right" />
 

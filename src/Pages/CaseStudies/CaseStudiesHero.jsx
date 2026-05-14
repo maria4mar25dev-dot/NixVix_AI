@@ -12,7 +12,7 @@ function CaseStudiesHero() {
       }}
     >
       <div className="overlay"></div>
-      <div className="relative z-20 flex flex-col items-center justify-center text-center lg:mt-32">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center">
         <h1 className="heading1">Case Studies</h1>
       </div>
     </div>

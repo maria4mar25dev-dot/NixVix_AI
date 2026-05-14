@@ -36,8 +36,7 @@ function HomeHero() {
 
         {/* Heading */}
         <h1 className="heading1">
-          Turning Complexity Into <br />
-          <span className="block">Clarity Through AI</span>
+          Turning Complexity Into Clarity Through AI
         </h1>
 
         {/* Paragraph */}
@@ -50,7 +49,7 @@ function HomeHero() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link to="/case-studies" className="w-full sm:w-auto">
-            <button className="btext group flex items-center justify-center gap-[10px] w-full sm:w-auto px-6 py-3 rounded-full font-semibold transition-all duration-300 border border-[#2B706D] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white hover:border-2 hover:border-[#51CBC6]">
+            <button className="btext group flex items-center justify-center gap-[10px] w-full sm:w-auto px-6 py-3 rounded-full font-semibold transition-all duration-300 ease-in-out hover:-translate-y-[2px] border border-[#2B706D] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white hover:border-2 hover:border-[#51CBC6]">
               Explore Our Work <span
                 className="
                     inline-flex
@@ -70,7 +69,7 @@ function HomeHero() {
           </Link>
 
           <Link to="/contact-us" className="w-full sm:w-auto">
-            <button className="w-full sm:w-auto px-6 py-3 rounded-full font-medium text-[15px] lg:text-[17.58px] bg-[#2E7A77] text-white  shadow-[0px_4px_54px_0px_#00000040]  transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
+            <button className="w-full sm:w-auto px-6 py-3 rounded-full font-medium text-[15px] lg:text-[17.58px] bg-[#2E7A77] text-white  shadow-[0px_4px_54px_0px_#00000040]  transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:border-2 hover:border-[#51CBC6]">
               Let’s Talk AI
             </button>
           </Link>
@@ -79,7 +78,7 @@ function HomeHero() {
 
       </div>
       {/* Arrow at bottom */}
-      <div className="absolute bottom-6 sm:-bottom-6 md:-bottom-10 lg:-bottom-24 left-1/2 -translate-x-1/2 z-[4]">
+      <div className="absolute bottom-0 sm:-bottom-6 md:-bottom-10 lg:-bottom-24 left-1/2 -translate-x-1/2 z-[4]">
         <img
           src={IMAGES.arrow2}
           alt="arrow"

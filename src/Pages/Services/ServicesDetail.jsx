@@ -3,29 +3,29 @@ import { IMAGES } from "../../Images";
 
 function ServicesDetail() {
   return (
-    <div className="relative z-[1] max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto my-16 sm:my-16 md:my-24 lg:my-28 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 rounded-[20px] border border-[#348E77] text-white bg-[#000000]/30 backdrop-blur-sm">
+    <div className="relative z-[1] max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto mt-0 sm:mt-14 md:mt-28 lg:mt-32 px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8 rounded-lg md:rounded-[20px] lg:rounded-[20px] border border-[#348E77] text-white bg-[#000000]/30 backdrop-blur-sm">
       
       {/* Title + Subtitle */}
       <div className="mb-6 sm:mb-8">
-        <h2 className="heading2 mb-2 " style={{textAlign:"left"}}>
+        <h2 className="heading2 mb-0 " style={{textAlign:"left"}}>
           Generative AI
         </h2>
-        <p className="pheading text-gray-400 mt-1">
+        <p className="pheading text-white">
           Innovate with intelligence that creates.
         </p>
       </div>
 
       {/* Image Section */}
-      <div className="rounded-[20px] overflow-hidden border border-[#262626] mb-6">
+      <div className="rounded-lg md:rounded-[20px] lg:rounded-[20px] overflow-hidden border border-[#262626] mb-6">
         <img
           src={IMAGES.item1}
           alt="Generative AI"
-          className="w-full h-[220px] sm:h-[320px] md:h-[420px] lg:h-[500px] object-cover transition-transform duration-500 hover:scale-[1.02]"
+          className="w-full aspect-[16/9] object-cover transition-transform duration-500 hover:scale-[1.02]"
         />
       </div>
 
       {/* Information Section */}
-      <div className="bg-[#0F0F0F]/90 backdrop-blur-xl border border-[#194439] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-300">
+      <div className="bg-[#0F0F0F]/90 backdrop-blur-xl border border-[#194439] rounded-lg md:rounded-[20px] lg:rounded-[20px] p-4 sm:p-6 md:p-8 transition-all duration-300">
         <strong className="pheading block font-bold mb-2 text-white">
           Best For:
         </strong>
@@ -34,7 +34,7 @@ function ServicesDetail() {
           MediaTech, eLearning, Avatars, AI Art
         </span>
 
-        <p className="ptext text-gray-300 leading-relaxed sm:leading-7">
+        <p className="ptext text-white leading-relaxed sm:leading-7">
           Our Generative AI solutions help you create smarter, faster, and more
           creative digital experiences. From turning text into stunning images
           and lifelike voices to enhancing photos, videos, and even creating

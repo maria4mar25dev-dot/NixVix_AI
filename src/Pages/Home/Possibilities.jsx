@@ -37,7 +37,7 @@ const services = [
 
 function Possibilities() {
   return (
-    <div className="max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mt-16 sm:mt-16 md:mt-24 lg:mt-28">
+    <div className="max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mt-20 sm:mt-20 md:mt-28 lg:mt-32">
 
       {/* Top Section */}
       <div className="flex items-center justify-between flex-wrap  mb-8">
@@ -49,7 +49,7 @@ function Possibilities() {
         </div>
 
         <Link to="/contact-us">
-          <button className="btext group flex items-center mt-2 gap-[10px] px-6 py-3 rounded-full font-semibold border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 hover:border-2 hover:border-[#51CBC6]">
+          <button className="btext group flex items-center mt-2 gap-[10px] px-6 py-3 rounded-full font-semibold border border-[#2E7A77] shadow-[0px_0px_14.1px_2px_#2B6D6B] text-white transition-all duration-300 ease-in-out hover:-translate-y-[2px] hover:border-2 hover:border-[#51CBC6]">
             Start a Project
             <span className="inline-flex transition-transform duration-300 group-hover:rotate-[45deg] group-hover:translate-x-[2px]">
               <img
@@ -63,7 +63,7 @@ function Possibilities() {
       </div>
 
       {/* Grid Section */}
-      <div className="w-full  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px]">
+      <div className="w-full aspect-[16/9] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px]">
 
         {services.map((service) => (
           <div
@@ -84,7 +84,7 @@ function Possibilities() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
             {/* Circle Icon */}
-            <div className="absolute top-5 left-5 w-[10px] h-[10px] border-2 border-white rounded-full z-10" />
+            <div className="absolute top-6 left-6 w-[10px] h-[10px] border-2 border-white rounded-full z-10" />
 
             {/* Content */}
             <div className="absolute bottom-6 left-6 z-10">

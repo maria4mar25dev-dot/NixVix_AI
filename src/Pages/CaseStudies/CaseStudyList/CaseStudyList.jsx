@@ -14,7 +14,7 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
   return (
     <div className="text-white">
       {showHeader && (
-        <div className="max-w-[1250px] mx-auto flex items-center px-[20px] sm:px-[40px] justify-between  mt-16 sm:mt-16 md:mt-24 lg:mt-28">
+        <div className="max-w-[1250px] mx-auto flex items-center px-[20px] sm:px-[40px] justify-between  mt-20 sm:mt-20 md:mt-28 lg:mt-32">
 
           {/* Left: Heading */}
           <div>
@@ -25,20 +25,28 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
           {/* Right: Navigation Buttons */}
           <div className="flex gap-3">
             <button
-              className="bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center hover:bg-[#6AFFD9]/10 transition"
+              className="bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center transition-all
+                       duration-300
+                       ease-out
+                       hover:-translate-y-[2px]
+                       hover:shadow-[0_10px_30px_rgba(92,229,224,0.25)]"
             >
               <FontAwesomeIcon
                         icon={faArrowLeft}
-                        className="text-[#6AFFD9] text-sm "
+                        className="text-[#6AFFD9] text-[10px] sm:text-[12px] md:text-[14px]"
                         />
             </button>
 
             <button
-              className=" bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 flex items-center justify-center hover:bg-[#6AFFD9]/10 transition"
+              className=" bg-[#0D0F0C] border-2 border-[#6AFFD9] text-[#6AFFD9] rounded-full w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center transition-all
+                       duration-300
+                       ease-out
+                       hover:-translate-y-[2px]
+                       hover:shadow-[0_10px_30px_rgba(92,229,224,0.25)]"
             >
               <FontAwesomeIcon
                         icon={faArrowRight}
-                        className="text-[#6AFFD9] text-sm "
+                        className="text-[#6AFFD9] text-[10px] sm:text-[12px] md:text-[14px]"
                         />
             </button>
           </div>
@@ -48,8 +56,8 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
 
 
       {/* Cards Section */}
-
-      <div className="px-[20px] sm:px-[40px] grid grid-cols-1  sm:grid-cols-2  lg:grid-cols-3 gap-6  max-w-[1250px]  mx-auto mb-6 sm:mb-10 md:my-4  items-stretch">
+    <div className="px-[20px] sm:px-[40px] max-w-[1250px] mx-auto ">
+      <div className=" grid justify-center grid-cols-[minmax(280px,340px)] sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 sm:mb-10 md:my-4  items-stretch">
         {caseData.map((item, i) => {
           const isActive = activeCase?.title === item.title;
           return (
@@ -63,18 +71,18 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
             >
               <div
                 onClick={() => handleClick(item)}
-                className={`w-full h-full bg-[#080808] rounded-2xl overflow-hidden flex flex-col relative cursor-pointer transition-all duration-300 border border-transparent hover:shadow-[0_6px_20px_rgba(52,142,119,0.3)] ${
-                  isActive ? "border-[#27f0d5]" : ""
-                }`}
+                className={`w-full h-full bg-[#080808] rounded-2xl overflow-hidden flex flex-col relative cursor-pointer transition-all duration-300 border border-transparent hover:shadow-[0_6px_20px_rgba(52,142,119,0.3)] ${isActive ? "border-[#27f0d5]" : ""
+                  }`}
               >
-                {/* Image */}
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  className="w-full h-[200px] object-cover rounded-t-2xl "
-                />
+                <div className="w-full aspect-[16/10] overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                 <div className="flex flex-col flex-grow px-2 sm:px-3 md:px-4 py-3">
+                <div className="flex flex-col flex-grow px-2 sm:px-3 md:px-4 py-3">
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-3 min-h-[48px]">
@@ -106,7 +114,7 @@ function CaseStudyList({ caseData, activeCase, setActiveCase, showHeader }) {
                 </div>
               </div></div>
           );
-        })}
+        })}</div>
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ function Industries() {
   return (
     <div>
 
-      <section className="relative text-center text-white  px-[20px] sm:px-[40px] md:px-[40px]    mt-20 sm:mt-20 md:mt-28 lg:mt-32 max-w-[1380px] mx-auto">
+      <section className="relative text-center text-white  px-[20px] sm:px-[40px] md:px-[40px]    mt-20 sm:mt-20 md:mt-28 lg:mt-32 max-w-[1360px] mx-auto">
 {/* Bottom Left Glow */}
 <div
   className="
@@ -58,8 +58,8 @@ function Industries() {
   "
 />
         {/* Titles */}
-        <h4 className="subtitle">Industries</h4>
-        <h2 className="heading2 ">Where Our Solutions Make An Impact</h2>
+        <h4 className="subtitle text-left">Industries</h4>
+        <h2 className="heading2 text-left">Where Our Solutions Make An Impact</h2>
 
         {/* Card Container */}
         <div className="relative max-w-[1035px] mx-auto mt-8">

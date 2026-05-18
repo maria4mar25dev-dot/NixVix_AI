@@ -13,22 +13,19 @@ function Workflow() {
   ];
 
   return (
-    <div className="outer-container py-10 sm:py-10 md:py-14 lg:py-16 my-10 sm:my-10 md:my-14 lg:my-16"
-    
-    style={{
+    <div className="outer-container my-20 sm:my-20 md:my-28 lg:my-32">
+    <section className="workflow-section">
+      <div className="workflow-header w-full max-w-[1360px] mx-auto px-[20px] sm:px-[40px]">
+        <p className="subtitle text-left">Process</p>
+        <h2 className="heading2 text-left">The NixVix Workflow</h2>
+      </div>
+
+      <div className="workflow-steps py-0 sm:py-0 md:py-28 lg:py-32"  style={{
     backgroundImage: `url(${IMAGES.workflowbg})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
-  }}
-    >
-    <section className="workflow-section">
-      <div className="workflow-header">
-        <p className="subtitle">Process</p>
-        <h2 className="heading2">The NixVix Workflow</h2>
-      </div>
-
-      <div className="workflow-steps">
+  }}>
         {steps.map((step, idx) => (
           <div className="workflow-item" key={idx}>
             <div className="circle">

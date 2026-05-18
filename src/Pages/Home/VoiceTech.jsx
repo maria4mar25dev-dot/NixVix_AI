@@ -4,12 +4,18 @@ import { IMAGES } from "../../Images";
 
 function VoiceTech() {
   return (
-    <div className="flex flex-col items-center justify-center text-center px-[20px] sm:px-[40px] md:px-[40px] mt-20 sm:mt-20 md:mt-28 lg:mt-32">
-      <h3 className="subtitle">AI Solutions</h3>
-      <h2 className="heading2">
-        Solutions We Deliver
-      </h2>
-      <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 md:gap-6 max-w-[1259px] mx-auto mt-4  mb-4 md:mb-8">
+    <div className=" w-full max-w-[1360px] mx-auto items-center justify-center px-[20px] sm:px-[40px] md:px-[40px]  mt-20 sm:mt-20 md:mt-28 lg:mt-32">
+      
+     <div >
+  <h3 className="subtitle text-left">
+    AI Solutions
+  </h3>
+
+  <h2 className="heading2 text-left">
+    Solutions We Deliver
+  </h2>
+</div>
+      <div className="flex flex-wrap justify-left items-center gap-4 sm:gap-4 md:gap-7 max-w-[1360px] mx-auto    mt-4  mb-4 md:mb-8">
         <Button label="Computer Vision" />
         <Button label="Pose Estimation" />
         <Button label="Voice Tech" />
@@ -19,11 +25,11 @@ function VoiceTech() {
         <Button label="Agent Workflows" />
       </div>
 
-      <h3 className="pheading mb-2">
+      <h3 className="pheading mb-2 text-center">
         Detection, Segmentation, Tracking
       </h3>
       <div
-        className="w-full max-w-[1211px]
+        className="w-full max-w-[1211px] px-[20px] sm:px-[40px] md:px-[40px] mx-auto
              aspect-[16/9]
              rounded-[10px] sm:rounded-[25px] md:rounded-[40px] lg:rounded-[60px]
              border border-[#1F805399]
@@ -44,7 +50,7 @@ export default VoiceTech;
 function Button({ label }) {
   return (
     <button
-      className="px-3 sm:px-4 md:px-4
+      className="px-3 sm:px-4 md:px-4 mt-2
                   py-2
                   whitespace-nowrap
                   btext

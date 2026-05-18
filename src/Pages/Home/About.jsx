@@ -8,19 +8,19 @@ function About() {
   return (
     <section
       id="about-section"
-      className="px-[20px] sm:px-[40px] lg:px-16 pt-0 sm:pt-20 md:pt-28 lg:pt-32 bg-transparent"
+      className="px-[20px] sm:px-[40px] md:px-[40px] pt-0 sm:pt-20 md:pt-28 lg:pt-32 bg-transparent max-w-[1360px] mx-auto"
     >
       {/* CONTENT */}
-      <div className="max-w-[1150px] mx-auto text-left">
+      <div className=" text-left">
 
         <h3 className="subtitle  text-left ">About Us</h3>
 
         <h2 className="heading2 text-left">
           Pioneering AI That Thinks Beyond Code
         </h2>
-
+       <div className='max-w-[1150px] mx-auto'>
         <p
-          className=" pheading text-white mb-6 lg:mb-8 max-w-[1150px] font-normal
+          className=" pheading text-white mb-6 lg:mb-8  font-normal max-w-[1150px] mx-auto
                  leading-5 sm:leading-6 md:leading-8 text-left"
         >
           We help businesses identify opportunities and transform them into reality through
@@ -31,7 +31,7 @@ function About() {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col  gap-4 sm:flex-col  md:flex-row md:justify-start lg:flex-row lg:justify-start">
+        
 
 
           <Link to="/contact-us">
@@ -52,10 +52,10 @@ function About() {
                 />
               </span>
             </button>
-          </Link>
+          </Link></div>
         </div>
 
-      </div>
+    
     </section>
 
   );

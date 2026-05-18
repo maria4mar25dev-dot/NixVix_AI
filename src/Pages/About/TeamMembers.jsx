@@ -33,25 +33,28 @@ function TeamMembers() {
     <section
       className="
         text-center text-white bg-black
-        px-6 
+       
       "
-    >
+    > 
+
+        <div className="relative w-full  mx-auto  max-w-[1360px]  px-[20px] sm:px-[40px] md:px-[40px] ">
+
       {/* Subtitle */}
-      <p className="subtitle">Our Team</p>
+      <p className="subtitle text-left">Our Team</p>
 
       {/* Title */}
       <h2
-        className="heading2"
+        className="heading2 text-left"
       >
         Behind the Tech
-      </h2>
+      </h2></div>
 
       {/* Team Container */}
       <div
         className="
           flex flex-wrap justify-center
           gap-x-20 gap-y-12
-          max-w-[1128px] mx-auto 
+          max-w-[1128px] mx-auto px-[20px] sm:px-[40px] md:px-[40px] 
         "
       >
         {teamMembers.map((member, index) => (

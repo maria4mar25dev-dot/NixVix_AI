@@ -13,14 +13,21 @@ const techData = [
 
 function TechCards({ home }) {
   return (
-    <div className={`relative z-[1] px-[20px] sm:px-[40px] flex flex-col items-center w-full ${home
+    <div className={`relative  w-full max-w-[1360px] mx-auto  z-[1] px-[20px] sm:px-[40px] flex flex-col items-center  ${home
         ? "pt-20 sm:pt-20 md:pt-28 lg:pt-32"
         : "pt-0"
       } bg-[radial-gradient(60%_60%_at_50%_50%,rgba(43,112,109,0.25)_0%,rgba(43,112,109,0.15)_40%,rgba(43,112,109,0)_80%)] backdrop-blur-[64px] overflow-hidden`}>
 
       {/* Titles */}
-      <h3 className="subtitle">Tech Stack</h3>
-      <h2 className="heading2">The Engine Behind Our AI</h2>
+<div className="w-full max-w-[1360px] mx-auto">
+  <h3 className="subtitle text-left">
+    Tech Stack
+  </h3>
+
+  <h2 className="heading2 text-left">
+    The Engine Behind Our AI
+  </h2>
+</div>
 
       <div className="relative w-full overflow-hidden">
 

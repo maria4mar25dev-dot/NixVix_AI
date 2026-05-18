@@ -4,13 +4,14 @@ import { IMAGES } from "../../Images";
 function Impact({ solution = false }) {
   return (
 
-    <section className={`relative w-full overflow-hidden  text-white px-[20px] sm:px-[40px]  ${solution ? "pt-20 sm:pt-20 md:pt-28 lg:pt-32 pb-10 sm:pb-10 md:pb-14 lg:pb-16" : "pt-20 sm:pt-20 md:pt-28 lg:pt-32"}`}>
+    <section className={`relative w-full overflow-hidden  text-white px-[20px] sm:px-[40px] md:px-[40px] mx-auto  max-w-[1360px]
+      ${solution ? "pt-20 sm:pt-20 md:pt-28 lg:pt-32 pb-10 sm:pb-10 md:pb-14 lg:pb-16" : "pt-20 sm:pt-20 md:pt-28 lg:pt-32"}`}>
 
       {/* LEFT GLOW */}
-      <div className={`absolute left-[-5%] top-[25%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
+      <div className={`absolute left-[-5%] top-[25%] w-[200px] md:w-[250px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
 
       {/* RIGHT GLOW */}
-      <div className={`absolute right-[-5%] top-[40%] w-[250px] md:w-[350px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
+      <div className={`absolute right-[-5%] top-[40%] w-[200px] md:w-[250px] h-[250px] md:h-[350px] bg-[#2B706D] opacity-20 blur-[120px] rounded-full z-[1]`} />
 
       {/* CENTER BACKGROUND SHAPE */}
       <img
@@ -43,10 +44,10 @@ function Impact({ solution = false }) {
       )}
 
       {/* CONTENT */}
-      <div className="relative z-[2] mx-auto text-center">
+      <div className="relative z-[2] ">
 
         {/* HEADING */}
-        <h2 className="heading2 mb-10 md:mb-16">
+        <h2 className="heading2 mb-10 md:mb-16 text-left max-w-[1360px] mx-auto ">
           The NixVix Impact
         </h2>
 

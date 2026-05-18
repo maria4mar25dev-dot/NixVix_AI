@@ -64,13 +64,13 @@ const techData = [
 
 function Expertise() {
   return (
-    <div className="relative max-w-[1200px] mx-[20px] sm:mx-[40px] md:mx-[30px] lg:mx-[40px] xl:mx-auto pt-20 sm:pt-20 md:pt-28 lg:pt-32">
+    <div className="w-full max-w-[1360px] mx-auto px-[20px] sm:px-[40px] pt-20 sm:pt-20 md:pt-28 lg:pt-32 ">
+      <h2 className="heading2 text-left">Expertise</h2>
+    <div className="relative max-w-[1200px] xl:mx-auto">
       {/* Glowing radial background */}
       <div className="absolute  inset-0 bg-[radial-gradient(50%_50%_at_50%_50%,rgba(43,112,109,0.3)_0%,rgba(43,112,109,0)_100%)] backdrop-blur-[64px] rounded-full"></div>
 
-      {/* Heading */}
-      <h2 className="heading2 text-center mb-10">Expertise</h2>
-
+    
       {/* Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 relative z-[1] items-stretch">
         {techData.map((item, index) => (
@@ -105,7 +105,7 @@ function Expertise() {
           </div>
         ))}
       </div>
-    </div>
+    </div></div>
   );
 }
 

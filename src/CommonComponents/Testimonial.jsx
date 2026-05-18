@@ -32,13 +32,13 @@ function Testimonial() {
   const { text, name, image } = testimonials[current];
 
   return (
-    <section className="bg-black text-white text-center px-[20px] sm:px-[40px] md:px-10 lg:px-16  mt-20 sm:mt-20 md:mt-28 lg:mt-32">
+    <section className="bg-black text-white max-w-[1360px] mx-auto px-[20px] sm:px-[40px] mt-20 sm:mt-20 md:mt-28 lg:mt-32">
       {/* Title */}
-      <h3 className="subtitle">Clients</h3>
-      <h2 className="heading2">Testimonials</h2>
+      <h3 className="subtitle text-left">Clients</h3>
+      <h2 className="heading2 text-left">Testimonials</h2>
 
       <div
-        className="relative mx-auto max-w-[1090px] overflow-hidden p-[0px] sm:p-[0px] md:p-[18px] lg:p-[22px] rounded-[24px] sm:rounded-[32px] md:rounded-[40px] lg:rounded-[46px]"
+        className="relative mx-auto max-w-[1090px] overflow-hidden p-[0px] sm:p-[0px] md:p-[18px] lg:p-[22px] rounded-lg sm:rounded-lg md:rounded-[40px] lg:rounded-[46px]"
       >
 
         {/* BORDER */}
@@ -50,7 +50,7 @@ function Testimonial() {
         />
 
         <div
-          className="absolute inset-0 rounded-[27px] pointer-events-none"
+          className="absolute inset-0 rounded-lg sm:rounded-lg md:rounded-[27px] pointer-events-none"
           style={{
             backgroundImage: `url(${IMAGES.testimonialOverlay})`,
             backgroundRepeat: "repeat",   // scale: tile
@@ -66,7 +66,7 @@ function Testimonial() {
           min-h-[420px] sm:min-h-[460px] md:min-h-[500px] lg:min-h-[540px]
           flex flex-col justify-between
           overflow-hidden p-4 sm:p-6 md:p-8 
-          rounded-[18px] sm:rounded-[24px] md:rounded-[32px] lg:rounded-[36px]"
+          rounded-lg sm:rounded-lg md:rounded-[32px] lg:rounded-[36px]"
         >
 
           {/* TEXTURE IMAGE OVERLAY */}
